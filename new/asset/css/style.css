@@ -450,8 +450,8 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 }
 
 .work-list .item .modal_content {
-  width: 60%;
-  height: 85%;
+  width: 48%;
+  height: 100%;
   
   position: absolute;
   left: 50%;
