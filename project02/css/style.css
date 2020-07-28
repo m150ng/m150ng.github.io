@@ -1,0 +1,1039 @@
+
+#header{
+    width: 100vw;
+    height: auto;
+}
+#header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+#header .logo {
+    margin-top: 70px; 
+    margin-left: 79px; 
+}
+
+#header .logo a { 
+    margin-top: 25px;
+    display: inline-block;
+    width: 347px;
+    height: 140px; 
+    background: url("../img/logo.jpg"); 
+}
+
+
+/* 슬라이드 메뉴 */
+.sidepanel {
+    height: 100vh; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #000; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 20px 8px 8px 40px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 36px;
+    margin-right: 15px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: red;
+    padding: 10px 15px;
+    border: none;
+    outline: 0;
+  }
+  
+  .openbtn:hover {
+   color: #222;
+  }
+  /* 슬라이드메뉴_끝 */
+
+/* ---------------------------헤더 끝 -------------------------------------- */
+
+
+
+/* ===========공통========== */
+.title{
+    display: block;
+    font-size: 16PX;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 45px;    
+}
+
+.mini_line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 16px;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+/* ---검색창---- */
+
+.topnav .search-container {
+    float: right;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-right: none;
+    outline: 0;
+
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: white;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+    outline: 0;
+
+  }
+  
+  /* .topnav .search-container button:hover {
+    background: #ccc;
+  } */
+
+  /* 검색창 끝 */
+
+
+/* ===========/공통========== */
+
+
+
+/* 현재 전시회 _메인배너 */
+.mbn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+    width: 100vw;
+    height: 783px;
+}
+
+.mbn_item{
+    justify-self:start;  
+}
+.mbn_wr{
+    text-align: right;
+    line-height: 2.5em;
+    padding-left: 25vw;
+}
+.mbn_wr>h2{
+    font-size: 33px;
+    font-weight: bold;
+}
+.mbn_wr>h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.mbn_wr>p{
+    font-weight: bold;
+}
+.mbn_wr .line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 6px 0;
+}
+/* 현재 전시회 _메인배너_끝 */
+
+
+/*PAST EXHIBITION */
+.pa_ex_item{
+    justify-self:center;  
+    line-height: 1.5em;                                 
+}
+.pa_ex{
+    width: 100vw;
+    height: 526px;
+}
+.pa_ex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.pa_ex_item .span{
+    display: block;
+    font-size: 16PX;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.pa_ex_item .vm{
+    display: block;
+    padding-bottom: 50px;
+    font-size: 13PX;
+    font-weight: bold;
+    text-align: right;
+}
+.pa_ex_item .empty{
+    display: block;
+    height: 63px;
+}
+
+.pa_ex_item .p1{
+    font-size: 16px;
+}
+
+.pa_ex_item .p2{
+    font-size: 13px;
+}
+/*PAST EXHIBITION_end */
+
+
+
+/* NOTICE */
+.notice_item{
+    justify-self:center;  
+    line-height: 1.5em;                                 
+}
+.notice{
+    width: 100vw;
+    height: 452px;
+}
+.notice{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.notice_item .span{
+    display: block;
+    font-size: 16PX;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.notice_item .vm{
+    display: block;
+    padding-bottom: 50px;
+    margin-right: 2em;
+    font-size: 13PX;
+    font-weight: bold;
+    text-align: right;
+}
+.notice_item .empty{
+    display: block;
+    height: 63px;
+}
+
+.notice_item p{
+    font-size: 16px;
+    text-align: center;
+}
+
+/* NOTICE-end */
+
+
+/*EDU */
+.edu_item{
+    justify-self:center;  
+    line-height: 1.5em;                                 
+}
+.edu{
+    width: 100vw;
+    height: 526px;
+}
+.edu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.edu_item .span{
+    display: block;
+    font-size: 16PX;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.edu_item .vm{
+    display: block;
+    padding-bottom: 50px;
+    font-size: 13PX;
+    font-weight: bold;
+    text-align: right;
+}
+.edu_item .empty{
+    display: block;
+    height: 63px;
+}
+
+.edu_item .p1{
+    font-size: 16px;
+    text-align: center;
+}
+
+/*EDU_end */
+
+
+
+/* PROJECT */
+.project_item{
+    justify-self:center;  
+    line-height: 1.5em;                                 
+}
+.project{
+    width: 100vw;
+    height: 800px;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.project_item .span{
+    display: block;
+    font-size: 16PX;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.project_item .vm{
+    display: block;
+    padding-bottom: 50px;
+    font-size: 13PX;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* PROJECT-end */
+
+
+
+
+/* PROJECT2 */
+.project2_item{
+    justify-self:center;  
+    line-height: 1.5em;                                 
+}
+.project2{
+    width: 100vw;
+    height: 800px;
+}
+.project2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.project2_item .span{
+    display: block;
+    font-size: 16PX;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.project2_item .vm{
+    display: block;
+    padding-bottom: 50px;
+    font-size: 13PX;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* PROJECT2-end */
+
+
+
+
+
+
+
+/* footer */
+
+.footer_item{
+    justify-self:center;  
+    line-height: 1.5em; 
+    color: white;                                
+}
+.footer_item:nth-child(1){
+    justify-self:right;
+    margin-right: 10em;
+}
+.footer_item:nth-child(2){
+    justify-self:left;
+    text-align: center;
+    margin-left: 5em; 
+    text-align: center;
+}
+#footer{
+    width: 100vw;
+    height: 300px;
+    background-color: #2f2e2e;
+}
+#footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.footer_item .line{
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+    margin-bottom: 30px;    
+    opacity: 0.8;
+}
+/* footer-end */
+
+
+/* ========================미술관소개PAGE========================= */
+
+
+.intM_item{
+   
+    justify-self:center;  
+    line-height: 1.5em;                                 
+}
+.intM{
+
+    width: 100vw;
+    height: 970px;
+}
+.intM{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items:center;
+    justify-content:center;
+}
+.intM_item:nth-child(1){
+    justify-self:center; 
+    margin-top: 130px; 
+}
+.intM_item:nth-child(2){
+    width: 70%;
+    font-size: 16px;
+}
+
+
+
+/* 미술관 둘러보기 목록 */
+.around_tit{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+    margin-top: 45px;
+}
+.around_tit_item{
+    margin-left: 15vw;
+}
+.around_tit_item>span{
+    display: block;
+    font-size: 16PX;
+    font-weight: bold;
+    text-align: left;
+    line-height: 2em;
+}
+.around_tit_item .line{
+    width: 350px;
+    height: 2px;
+    background-color: black; 
+}
+.around{
+   
+    width: 100vw;
+    height: auto;
+    margin-bottom: 150px;
+}
+.around{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+} 
+.around_item{
+
+    /* justify-self:center;   */                                
+}
+.around{
+
+    width: 100vw;
+    height: 970px;
+}
+.around{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items:center;
+    justify-content:center;
+}
+.around_item>.left{
+    float: right;
+}
+.around_item>.center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.around_item>.right{
+    float: left;
+}
+
+/* 미술관 둘러보기 목록-end */
+
+
+/* ========================전시PAGE========================= */
+
+/* CURRUNT현재 전시 제목 */
+.now_tit{
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+    padding-top: 130px;
+}
+.now_tit_item{
+    justify-self:start; 
+}
+.now_tit_item .line{
+    width: 350px;
+}
+/* 현재전시 사진&설명 */
+.nowEx{
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.nowEx_item:nth-child(1){
+    justify-self: end;
+    padding-right: 4em;
+}
+.nowEx_item:nth-child(2){
+    justify-self:start;
+    width: 80%;
+    margin-left: 2em;
+}
+.nowEx_item .bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+.nowEx_item .nowEx_write{
+    font-size: 16px;
+    line-height: 1.8em;
+}
+.nowEx_item .nowEx_date{
+    font-size: 14px;
+}
+
+
+/* PAST */
+.pa_tit{
+
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content:start;
+    margin: 0 auto;
+
+}
+.pa_tit_item{
+    justify-self:start; 
+}
+.pa_tit_item .line{
+    margin-bottom: 25px;
+}
+.pa_tit_item .year{
+    line-height: 2.2em;
+    font-weight: bold;
+}
+.pa_tit_item .year a{
+    color: black;
+    margin-right: 1em;
+}
+.pa_tit_item .line{
+    width: 350px;
+}
+
+
+/* 지난전시 목록 */
+.paEx{
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.paEx_item{
+    justify-self:center; 
+    line-height: 1.5em;
+    padding-bottom: 100px;
+}
+.paEx_item .p1{
+    font-weight: bold;
+    font-size: 16px;
+}
+.paEx_item .p2{
+    font-size: 14px;
+}
+/* ========================전시PAGE====END===================== */
+
+
+
+/* ========================소장품PAGE========================= */
+
+/* 소장품 */
+.have_tit{
+    padding-top: 130px;
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content:start;
+    margin: 0 auto;
+
+}
+.have_tit_item{
+    /* justify-self:start;  */
+}
+.have_tit_item .line{
+    width: 350px;
+}
+
+
+/* 소장품 목록 */
+.have{
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.have_item{
+    justify-self:center; 
+    align-self: start;
+    margin-top: 100px;
+    line-height: 1.5em;
+}
+.have_item .p1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.have_item .p2{
+    font-size: 14px;
+}
+
+
+
+
+/* ========================소장품PAGE====END===================== */
+
+
+
+/* ========================창작스튜디오PAGE========================= */
+/* 창작스튜디오 제목 */
+.studio_tit{
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+    padding-top: 130px;
+}
+.studio_tit_item{
+    justify-self:start; 
+}
+.studio_tit_item .line{
+    width: 350px;
+}
+/* 창작스튜디오 사진&설명 */
+.studio{
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.studio_item:nth-child(1){
+    justify-self: end;
+}
+.studio_item:nth-child(2){
+    justify-self:start;
+    width: 80%;
+    line-height: 1.5em;
+}
+.studio_item .bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+.studio_item p{
+    line-height: 1.5em;
+}
+
+
+/* 시설 */
+.facility_tit{
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content:start;
+    margin: 0 auto;
+
+}
+.facility_tit_item{
+    justify-self:start; 
+    
+}
+.facility_tit_item .line{
+    width: 350px;
+}
+
+
+/* 시설 목록 */
+.facility{
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto;
+    padding-bottom: 130px;
+    line-height: 1.5em;
+}
+.facility_item{
+    width: 400px;
+    justify-self:center; 
+    align-self: start;
+    padding-top: 100px;
+}
+.facility_item img{
+    width: 400px;
+}
+.facility_item .p1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.facility_item .p2{
+    font-size: 14px;
+    width: 98%;
+}
+
+
+/* ========================창작스튜디오PAGE=======END================== */
+
+/* ========================교육/행사PAGE========================= */
+
+
+.top{
+    width: 70vw;
+    margin: 0 auto;
+    padding-top: 130px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.top_item .line{
+    width: 350px;
+}
+
+
+
+
+
+.imp_tit{
+    width: 100vw;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    /* align-items:center; */
+    justify-content:center;
+}
+.imp_tit_item{
+    font-weight: bold;
+    justify-self: center;
+}
+
+
+
+.edulist{
+    width: 50vw;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+.edulist_item{
+    line-height: 2.5em;
+    margin-bottom: 130px;
+}
+.edulist_item:nth-child(1){
+    text-align: left;
+}
+.edulist_item:nth-child(2){
+    text-align: right;
+}
+
+/* ========================교육/행사PAGE======END=================== */
+
+
+
+/* ========================아트샵PAGE========================= */
+
+/* 아트샵 */
+.shop_tit{
+    padding-top: 130px;
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content:start;
+    margin: 0 auto;
+
+}
+.shop_tit_item{
+    /* justify-self:start;  */
+}
+.shop_tit_item .line{
+    width: 350px;
+}
+
+
+/* 아트샵 목록 */
+.shop{
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    align-items:center;
+    justify-content:center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.shop_item{
+    justify-self:center; 
+    align-self: start;
+    margin-top: 100px;
+    line-height: 1.5em;
+}
+.shop_item .p1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.shop_item .p2{
+    font-size: 14px;
+}
+
+
+
+
+/* ========================아트샵PAGE====END===================== */
+
+
+
+/* ========================커뮤니티PAGE========================= */
+
+
+.commu{
+    width: 70vw;
+    margin: 0 auto;
+    padding-top: 130px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+.commu_item .line{
+    width: 350px;
+}
+
+
+
+
+
+.commu_tit{
+    width: 100vw;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    /* align-items:center; */
+    justify-content:center;
+}
+.commu_tit_item{
+    font-weight: bold;
+    justify-self: center;
+}
+
+
+
+.commulist{
+    width: 50vw;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(1,1fr);
+    align-items:center;
+    justify-content:center;
+}
+.commulist_item{
+    line-height: 2.5em;
+    margin-bottom: 130px;
+}
+.commulist_item:nth-child(1){
+    text-align: left;
+}
+.commulist_item:nth-child(2){
+    text-align: right;
+}
+
+/* ========================커뮤니티PAGE======END=================== */
+
+
+
+
+/* 태블릿사이즈 */
+/* @media all and (min-width:768px)
+{
+    .header{
+        display: flex;
+        justify-content:space-between;
+    }
+    .logo>button{
+        display:none;
+    }
+    .menu>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .menu{
+        display: block;
+    }
+    */
+}
+
+
+
+
+
+
+/* 모바일사이즈 */
+/* @media all and (min-width:1024px)
+{
+    .header{
+        width: 1024px;
+        margin: 0 auto;
+    }
+} */
