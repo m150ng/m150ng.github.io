@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영은미술관</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+
+    <link href="./css/reset.css" type="text/css"  rel="stylesheet" >
+    <link href="./css/style.css" type="text/css"  rel="stylesheet">
+    <script src="./js/jquery.js"></script>                     
+                                                                    
+</head>
+
+<body class="EXhibition">
+    
+    <header id="header">
+        <div class="header_item">
+            <span class="logo"><a href="index.html"></a></span>
+        </div>
+        <div class="header_item">
+            <!-- slide menu -->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="introduce.html">미술관소개</a>               
+                <a href="exhibition.html">전시</a>
+                <a href="have_item.html">소장품</a>
+                <a href="studio.html">창작스튜디오</a>
+                <a href="edu.html">교육/행사</a>
+                <a href="shop.html">아트샵</a>
+                <a href="commu.html">커뮤니티</a>
+            </div>
+
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <!-- /slide menu -->
+        </div>
+    </header>
+
+    <div class="now_tit">
+        <div class="now_tit_item">
+            <span class="title">CURRENT</span>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="nowEx">
+        <div class="nowEx_item">
+            <img src="./img/전시/1-1.jpg" width="520" alt="">
+        </div>
+        <div class="nowEx_item">
+            <p class="nowEx_write">
+                <b class="bold">영은지기, 기억을 잇다 : </b><br><br>
+                개관 20주년 기념 특별기획전 제1회 '영은지기, 기억을 잇다 : I진실되게'를 4월7일부터 6월28일까지 제1전시장에서 개최한다. '영은지기, 기억을 잇다 : I진실되게'전은 그간 영은미술관과 함께 해왔던 작가와 모든 관계자들인 영은지기들을 기억하기 위한 특별기획전이다. <br><br>
+
+                20주년 전시 '영은지기, 기억을 잇다 : I진실되게' 는 영은창작스튜디오의 대표작가 강형구, 김기린, 방혜자, 석철주 작가 등 50여명의 작가 작품들로 구성되었다. 입주작가들은 미술의 고유 매체인 평면 회화뿐 아니라 다양한 오브제와 주제의식을 통해 여러 형태의 작품들을 창작해 왔다. 따라서 이번 전시는 한국 근현대 미술의 발자취를 되돌아 볼 수 있는 중진작가의 작품부터 새로운 매체를 통해 실험적인 작품을 시도하는 신진작가의 작품까지 현대미술의 다양한 면모를 살펴볼 수 있는 기회가 될 것으로 기대한다. 
+            </p>
+            <div class="mini_line"></div>
+            <p class="nowEx_date">2020년 4월 7일 - 2020년 6월 28일</p>
+
+        </div>
+    </div>
+
+    <div class="pa_tit">
+        <div class="pa_tit_item">
+            <span class="title">PAST</span>
+            <div class="line"></div>
+            <div class="year">
+                <span><a href="#">2020</a></span>
+                <span><a href="#">2019</a></span>
+                <span><a href="#">2018</a></span>
+                <span><a href="#">2017</a></span>
+                <span><a href="#">2016</a></span>
+                <span><a href="#">2015</a></span><br>
+                <span><a href="#">2004</a></span>
+                <span><a href="#">2003</a></span>
+                <span><a href="#">2002</a></span>
+                <span><a href="#">2001</a></span>
+                <span><a href="#">2000</a></span>
+                <span><a href="#">1999</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="paEx">
+        <div class="paEx_item">
+            <img src="./img/권.jpg" alt="권혜경" width="500px">
+            <p class="p1">권혜경 : 사물을 넘어 별을 향하여</p>
+            <p class="p2">2020년 4월 7일 - 2020년 4월 19일</p>
+        </div>
+        <div class="paEx_item">
+            <img src="./img/조.jpg" alt="조" width="500px">            
+            <p class="p1">조은령 : 일상적인 희생물</p>
+            <p class="p2">2020년 4월 25일 - 2020년 5월 17일</p>
+        </div>
+        <div class="paEx_item">
+            <img src="./img/이.jpg" alt="이" width="500px">
+            <p class="p1">유병훈 : 숲·바람-默</p>
+            <p class="p2">2019년 6월 15일 - 2019년 9월 8일</p>
+        </div>
+        <div class="paEx_item">
+            <img src="./img/권.jpg" alt="권혜경" width="500px">
+            <p class="p1">권혜경 : 사물을 넘어 별을 향하여</p>
+            <p class="p2">2020년 4월 7일 - 2020년 4월 19일</p>
+        </div>
+    </div>
+
+
+       
+
+    <footer id="footer">
+        <div class="footer_item">
+            <img src="./img/logo2.jpg" alt="" width="350">
+        </div>
+        
+        <div class="footer_item">
+            <div class="line"></div>
+            <span>
+            경기도 광주시 청석로 300(쌍령동 8-1) 우 12791<br>
+            Tel : 031-0761-0137	 Fax : 031-762-4189<br>
+            E-mail : ymuseum@hanmail.net<br>
+            Copyright(c) YOUNGEUN MUSEUM All Rights Reserved. 2020
+            </span>
+        </div>
+    </footer>
+    
+
+
+
+
+    
+</body>
+</html>
