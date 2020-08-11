@@ -392,9 +392,9 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 .about003 .inbx .cli-bx::after { content: ''; clear: both; display: block; font-size: 0; }
 .about003 .inbx .cli-bx span { display: block; float: left; width: 116px; height: 116px; margin: 50px 0 50px 130px; color: #333; font-size: 14px;}
 
-.about004 { margin: 220px auto 0; padding: 0 0 0 4%; width: 100%; }
-.about004 .inbx { position: relative; background-color:#111; padding: 90px 0; }
-.about004 .inbx .a04bx { width: 1280px; margin: 0 auto; padding: 0 0 0 200px; position: relative; }
+.about004 { margin: 220px auto 0; padding: 0 0 10% 4%; width: 100%; }
+.about004 .inbx { position: relative; background-image: url(../images/memo.png); padding: 90px 0; }
+.about004 .inbx .a04bx { width: 1280px; margin: 0 auto; padding: 0 0 0 200px; position: relative;  color: #555;}
 .about004 .inbx .sm-tit { position: absolute; white-space: nowrap; top: 5.5rem; left: 0; }
 .about004 .inbx .sm-tit span { font-size: 20px; display: inline-block; }
 .about004 .inbx .cli-bx { padding: 0; margin: 20px 0 0 190px; }
