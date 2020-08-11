@@ -23,6 +23,7 @@
 <script src="../song/js/wrest.js"></script>
 
 
+
     
 </head>
     
@@ -97,62 +98,35 @@
     </div-->
 	
 
-	<!-- bo_table은 연결할 게시판 테이블명 쓰기 -->
-    <form name=frm id=frm method=post action="mailer_test.php">
-        <!-- onsubmit="return fregister_submit1(this);return false;" enctype="multipart/form-data"> -->
-	  <!-- <input type=hidden name=w value="">
-	  <input type=hidden name=bo_table value="nr">
-	  <input type=hidden name=wr_id value="">
-	  <input type=hidden name=sca value="">
-	  <input type=hidden name=sfl value="">
-	  <input type=hidden name=stx value="">
-	  <input type=hidden name=spt value="">
-	  <input type=hidden name=sst value="">
-	  <input type=hidden name=sod value="">
-	  <input type=hidden name=s value="s">
-	  <input type=hidden name=wr_key value=""> 
-	  <input type=hidden name=page value=""> -->
+<!-- 메일 폼  -->
+    <form name=frm id=frm method="POST" data-email="example@email.net"
+    action="https://script.google.com/macros/s/AKfycbzLcnrleydp8I2wfBM3r73dnzeAxh-NntPaQ72HwaArcxZLPxE/exec">
 
-
-
-
-    <!-- 
-            send.html
-                    <form method="post" action="receive.php">
-                        <input type="text" name="name" value="홍길동">
-                        <input type="submit" value="보내기" >
-                    </form>
-
-            receive.php
-                    <?
-                        $name = $_POST['name'];
-                        echo $name. "<br>";
-                    ?>
-     -->
-	
 
 		<div class="form-bx">
             <div class="inp-grp">
-                <input type="text" class="input" id="wr_name" name="wr_name" placeholder="성함">
+                <input type="text" class="input" id="wr_name" name="성함" placeholder="성함">
             </div>
             <div class="inp-grp">
-                <input type="text" class="input" id="wr_subject" name="wr_subject" placeholder="이메일 주소를 기입해주세요.">
+                <input type="text" class="input" id="wr_subject" name="이메일" placeholder="이메일 주소를 기입해주세요.">
                 <!-- <input type="text" class="input" id="wr_2" name="wr_2" placeholder="연락처가 어떻게 되시나요?"> -->
             </div>
      
             <div class="inp-grp">
-                <textarea class="textarea" id="wr_content" name="wr_content" placeholder="내용을 입력해주세요."></textarea>
+                <textarea class="textarea" id="wr_content" name="내용" placeholder="내용을 입력해주세요."></textarea>
             </div>    
         </div>
         <div class="btz">
-   
             <div class="bt">
                 <button type="submit"><span>send</span></button>
             </div>
         </div> 
-    </div>
-					
-	</form>
+
+
+</div>
+			
+    </form>
+
 
 	<script>
 		function fregister_submit1(f)
@@ -227,6 +201,8 @@
 		NProgress.done(); 
 	}); 
 </script>
+
+
 
 </body>
 
