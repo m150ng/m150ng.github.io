@@ -98,9 +98,9 @@
 	
 
 	<!-- bo_table은 연결할 게시판 테이블명 쓰기 -->
-    <form name=frm id=frm method=post action="#" 
-        onsubmit="return fregister_submit1(this);return false;" enctype="multipart/form-data">
-	  <input type=hidden name=w value="">
+    <form name=frm id=frm method=post action="mailer_test.php">
+        <!-- onsubmit="return fregister_submit1(this);return false;" enctype="multipart/form-data"> -->
+	  <!-- <input type=hidden name=w value="">
 	  <input type=hidden name=bo_table value="nr">
 	  <input type=hidden name=wr_id value="">
 	  <input type=hidden name=sca value="">
@@ -111,8 +111,24 @@
 	  <input type=hidden name=sod value="">
 	  <input type=hidden name=s value="s">
 	  <input type=hidden name=wr_key value=""> 
-	  <input type=hidden name=page value="">
+	  <input type=hidden name=page value=""> -->
 
+
+
+
+    <!-- 
+            send.html
+                    <form method="post" action="receive.php">
+                        <input type="text" name="name" value="홍길동">
+                        <input type="submit" value="보내기" >
+                    </form>
+
+            receive.php
+                    <?
+                        $name = $_POST['name'];
+                        echo $name. "<br>";
+                    ?>
+     -->
 	
 
 		<div class="form-bx">
@@ -121,7 +137,7 @@
             </div>
             <div class="inp-grp">
                 <input type="text" class="input" id="wr_subject" name="wr_subject" placeholder="이메일 주소를 기입해주세요.">
-                <input type="text" class="input" id="wr_2" name="wr_2" placeholder="연락처가 어떻게 되시나요?">
+                <!-- <input type="text" class="input" id="wr_2" name="wr_2" placeholder="연락처가 어떻게 되시나요?"> -->
             </div>
      
             <div class="inp-grp">
