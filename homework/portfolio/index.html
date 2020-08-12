@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="./css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <script src="https://kit.fontawesome.com/2446673a75.js" crossorigin="anonymous"></script> 
+    <script src="./js/jquery.js"></script>
+    <title>portfolio</title>
+    <style>
+        #banner{
+            height: 35vh;
+            background-image: url();
+            
+        }
+        #portfolio{
+            background: none;
+        }
+        .modal{
+            display: none;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .close{
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            cursor: pointer;
+        }
+        .modal-content{
+            display: block;
+            width: 80%;
+            /* max-width: 1000px; */
+            margin: 100px auto;
+            animation: zoom 0.5s;
+        }
+        @keyframes zoom {
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">KIM MI <span>S</span>ONG</a>
+            <button type="button">
+                <span class="fas fa-bars"></span>
+            </button>
+        </div>
+        <nav class="menu">
+            <ul class="gnb">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="banner">
+        <h1>PORTFOLIO</h1>
+        <P>I'M A FRONTEND DEVELOPER</P>
+        <a href="#">scroll down</a>
+    </section>
+
+ 
+
+
+    <section id="about">   
+        <input type="radio" name="tab" id="tab1" checked>
+        <input type="radio" name="tab" id="tab2">
+        <input type="radio" name="tab" id="tab3">
+        <div class="tab_btn">
+            <label for="tab1"></label>
+            <label for="tab2"></label>
+            <label for="tab3"></label>
+
+        </div>     
+        <ul class="work">
+            <li>
+                <div class="w_icon">H</div>
+                <div class="text">
+                    <p>HOMEPAGE</p>
+                    <p>디자인 시안 작업을 포함하여 반응형웹, 모바일웹
+                        등의 프랫폼에 최적화된 홈페이지 디자인 작업 및 웹프로그램
+                        개발까지 고객이 원하는 전략에 충실하게 수행하여 성공적인
+                        디자이너가 되도록 최선을 다하고있습니다.</p>
+                </div>
+            </li>
+            <li>
+                <div class="w_icon">P</div>
+                <div class="text">
+                    <p>PUBLISHING</p>
+                    <p>Creative Design(Web/Mobile, UX/UI) 
+                        HTML5 / CSS3 웹표준, 모바일웹 퍼블리싱 
+                        웹프로그램 개발, 웹프로모션 컨설팅
+                        홈페이지 유지보수/관리
+                        </p>
+                </div>                
+            </li>
+            <li>
+                <div class="w_icon">B</div>
+                <div class="text">
+                    <p>BRANDING</p>
+                    <p>풍부한 온라인 마케팅 경험과 역량을 바탕으로 
+                    통합 웹서비스를 제안드리며, 
+                    창의적인 발상과 폭 넓은 네트워크를 기반하여 다양한 
+                    전문분야의 효과적인 Creative Design 방법론을 제안합니다.</p>
+                </div>
+            </li>            
+    
+        </ul>
+
+    </section>
+
+    <section class="portfolio">
+        <h2 class="sub_title">PORTFOLIO</h2>
+        <div class="container">   
+            <div class="photo">
+                <img class="item_img" src="./img/p1.png" >
+                <img class="item_img" src="./img/p2.png" >
+                <img class="item_img" src="./img/p3.png" >
+            </div>
+
+            <div class="photo">
+                <img class="item_img" src="./img/p4.png" >
+                <img class="item_img" src="./img/p5.png" >
+                <img class="item_img" src="./img/p6.png" >
+            </div>
+
+            <div class="photo">
+                <img class="item_img" src="./img/p7.png" >
+                <img class="item_img" src="./img/p8.png" >
+                <img class="item_img" src="./img/p9.png" >
+            </div>
+        </div>
+
+    </section>
+
+    <!-- modal -->
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img  class="modal-content" src="./img/p1.png">
+    </div>
+    <!-- modal_end -->
+
+
+    <section class="contact">
+        <h2 class="sub_title">Contact</h2>
+        <div class="text">
+            <p> 안녕하세요 김미송입니다.</p>
+            <p>궁금한 사항을 메일로 문의해 주시면<br> 빠른시일내에 답변드리도록하겠습니다.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="contact_icon">
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope icon"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer"></section>
+    <script>
+        $(function(){
+            /*제이쿼리 소스*/
+            $(".logo>button").click(function(){
+                $(".menu").slideToggle();/*보였다 안보였다 하는애*/
+            });
+        });
+    </script>
+
+<footer>
+    E-Mail. hnjm0402@naver.com <br>
+    Copyright ⓒ 2020 by KIM MI SONG. <br>
+    All Rights Reserved
+</footer>
+
+
+<script>
+// 클릭대상 : img>src
+// modal->img:src
+const imgItem=document.querySelector(".container");
+
+const modalTag=document.querySelector(".modal");
+imgItem.addEventListener("click",function(e){
+    console.log( e.target );
+    // if(this == e.target) return;
+    let targetSrc = e.target.getAttribute("src");
+    
+    if(targetSrc == null) return;
+    modalTag.style.display = "block";
+    modalTag.children[1].src = targetSrc;
+});
+
+const closeBtn = modalTag.children[0];
+closeBtn.addEventListener("click",function(){
+    modalTag.style.display = "none";
+});
+
+</script>
+
+
+</body>
+</html>
