@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: 'ggB'; 
+    src: url(./font/ggB.ttf) format('truetype'); 
+    } 
+body { 
+    font-family: ggB; 
+    font-style: normal; 
+    font-weight: normal;
+    }
+
+
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0;}
+body { width:100%; min-width:1400px; height:23000px; font-family:Orbitron; font-size:12px; letter-spacing:2px;} 
+
+/*배경 이미지*/
+.bg { position:fixed; width:100%; height:100%; top:0px; left:0px;  background:url(../img/bg.jpg) no-repeat center top; background-size:cover;}
+
+/*로고*/
+h1 { position:fixed; top:40px; left:70px; z-index:2;}
+h1 img { width:130px; }
+
+/*주 메뉴*/
+.gnb { position:fixed; top:50px; right:250px; z-index:2;}
+.gnb li { float:left; margin-left:50px;}
+.gnb li a { font-size:14px; font-weight:bold; color:#fff; transform:scale(1); opacity:0.5; transition:all 0.5s;}
+.gnb li a:hover { transform:scale(1.5); opacity:1;}
+
+
+/*스크롤 네비게이션*/
+.scrollNavi { position:fixed; left:100px; top:300px; z-index:2;}
+.scrollNavi li { position:relative; width:150px; height:35px; margin-bottom:20px; font-size:12px; color:#fff; text-align:center; perspective:400px; cursor:pointer;}
+.scrollNavi li em { position:absolute; top:8px; left:20px; font-size:14px; font-weight:bold; color:#fff; text-shadow:1px 1px 1px #000;}
+.scrollNavi li span { display:block; width:3%; height:100%; position:absolute; transform:skewX(-30deg); box-shadow:1px 1px 1px #000;}
+.scrollNavi li.on span { width:100%;}
+.scrollNavi li:nth-child(1) span { background:#0a1a29;}
+.scrollNavi li:nth-child(2) span { background:#211c19;}
+.scrollNavi li:nth-child(3) span { background:#c5c6ca;}
+.scrollNavi li:nth-child(4) span { background:#c5c6ca;}
+.scrollNavi li:nth-child(5) span { background:#1a1a1a;}
+
+/*카피라이트*/
+.copyright { position:fixed; bottom:20px; right:30px; font-family:arial; font-size:11px; color:#555;}
+
+/*박스 그룹 레이아웃*/
+section { width:1200px; height:700px; position:fixed; left:50%; margin-left:-600px; top:50%; margin-top:-350px; perspective:2300px; z-index:1; }
+section>article { width:1200px; height:700px; position:absolute; top:0px; left:0px; opacity:0.5; z-index:8;}
+section>article.on { opacity:1; z-index:9;}
+section>article:nth-child(1) { transform:translateZ(0px);}
+section>article:nth-child(2) { transform:translateZ(-5000px);}
+section>article:nth-child(3) { transform:translateZ(-10000px);}
+section>article:nth-child(4) { transform:translateZ(-15000px);}
+section>article:nth-child(5) { transform:translateZ(-20000px);}
+
+/*박스 폰트 및 이미지 공통속성*/
+section>article>p { position:absolute; width:450px; padding:30px 60px; color:#fff; opacity:1;}
+section>article>p>span { font-family:ggB; font-size:60px; letter-spacing:0px; line-height:1.5; }
+section>article>img { position:absolute;}
+
+/*첫 번째 박스 콘텐츠*/
+section>article:nth-child(1) p { bottom:150px; right:-50px;}
+section>article:nth-child(1) p span { color:#0a1a29;}
+.obj13 { bottom:0px; left:100px;}
+
+/*두 번째 박스 콘텐츠*/
+section>article:nth-child(2) p { bottom:150px; left:50px;}
+section>article:nth-child(2) p span { color:#211c19;}
+.obj22 { bottom:0px; right:100px;}
+
+/*세 번째 박스 콘텐츠*/
+section>article:nth-child(3) p { bottom:150px; right:-50px;}
+section>article:nth-child(3) p span { color:white;}
+.obj32 { bottom:0px; left:100px;}
+
+/*네 번째 박스 콘텐츠*/
+section>article:nth-child(4) p { bottom:150px; left:50px;}
+section>article:nth-child(4) p span { color:white;}
+.obj43 { bottom:0px; right:100px;}
+
+/*다섯 번째 박스 콘텐츠*/
+section>article:nth-child(5) p { bottom:150px; right:-50px;}
+section>article:nth-child(5) p span { color:#1a1a1a;}
+.obj53 { bottom:0px; left:100px;}
