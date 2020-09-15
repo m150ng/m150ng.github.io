@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FUN FUN 심리테스트</title>
+        <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+        <!-- includeList -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="includeHTML.js"></script>
+
+        <script type="text/javascript">
+        function headerCompleted() {$("#sample").html("");}
+        </script>
+        <!-- includeList/ -->        
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="image/logo.png" alt=""></a>
+    </header>
+
+<div class="quiz">
+    <h2 class="smTitle">[ 당신에게 어울리는 연인 타입은? ]</h2>
+
+    <img src="image/13-1.jpg" alt="">
+
+    <h2 class="Title">
+      당신은 지금 조카의 돌잔치에 갔다 . <br><br>
+      아이에게 돌잡이를 시키려는 찰나인데, 아이는 뭘 고를 것 같은가?    
+    </h2>
+
+    <button class="accordion">1. 반지</button>
+    <div class="panel">
+    <p>
+      당신은 뜨거운 열정과 자신감을 가진 능력 있는 연인이 잘 어울린다.<br>
+      잔잔자고 무난한 타입보다는 무엇을 해도 화끈하게 처리하고 <br>
+      자신이 계획한 일은 반드시 해내는 빈틈없는 이성을 내심 바라고 있다.<br>
+      이런 사람은 사랑할땐 열정적이라 좋을 수 있지만 <br>
+      너무 빨리 타오르면 반대로 금세 식어버릴 수가 있으니 속도 조절이 필요하다
+
+    </p>
+    </div>
+
+    <button class="accordion">2. 떡.</button>
+    <div class="panel">
+    <p>
+      당신은 무드에 약하기 때문에 매너 좋고 화술이 뛰어난 이성을 좋아한다,<br>
+      특히 유머스러한 상대에게 푹 빠져 드는 당신은 처음부터 확 반하는 타입보다는 <br>
+      보면 볼수록 매력이 묻어나는 이성과 잘 어울린다.<br>
+      힘든 일에도 여유와 웃음으로 대처하는 성격 좋은 사람이라면 딱이다.
+      
+    </p>
+    </div>
+
+    <button class="accordion">3. 돈</button>
+    <div class="panel">
+    <p>
+      당신은 따뜻한 성품의 이성과 잘 어울린다.<br>
+      당신이 아무리 예민해져 있을때에도 화내지 않고 <br>
+      당신이 하자는 대로 잘 맞춰주는 사람과의 연애라면 성공률이 높다.<br>
+      때문에 당신은 가까이에 있는 사람과 사랑에 빠질 가능성이 많다,<br>
+      하지만 상대가 지나치게 마음이 여리다면 만나지 않는게 낫다.
+
+    </p>
+    </div>
+
+    <button class="accordion">4. 과일</button>
+    <div class="panel">
+    <p>
+      당신은 생각이 깊고 넓은 연상의 연인이 잘 어울린다.<br>
+      물론 당신은 귀여운 연하에게 잘빠지고 당신에게 매력을 느끼지만, <br>
+      막상 그런 연하를 만나면 피곤함과 싫증을 느끼는 경우가 적지 않다.<br>
+      그러니 은근한 카리스마스를 발산하는 연상의 이성에게 관심을 가져보기를 권한다.
+
+    </p>
+    </div>
+
+
+</div>
+
+
+<!-- 다른 심리테스트 리스트  -->
+<div class="margin"></div>
+<div class="title">
+    <img src="image/title.png" alt="">
+    <p>다른 심리테스트<p>
+    <img src="image/title.png" alt="">
+</div>
+
+
+
+ <!-- "include-html" 태그의 "target" 속성에 대치시킬 파일을 지정해준다. -->
+ <include-html target="list.html" completed="headerCompleted"></include-html>
+ <script>includeHtml();</script>
+ <!-- 다른 심리테스트 리스트/  -->
+
+
+
+
+<footer>
+    <span>@2020copy right MISONG KIM</span>
+</footer>
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

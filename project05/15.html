@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FUN FUN 심리테스트</title>
+        <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+        <!-- includeList -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="includeHTML.js"></script>
+
+        <script type="text/javascript">
+        function headerCompleted() {$("#sample").html("");}
+        </script>
+        <!-- includeList/ -->    
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="image/logo.png" alt=""></a>
+    </header>
+
+<div class="quiz">
+    <h2 class="smTitle">[ 나의 장점을 알아보는 테스트 ]</h2>
+
+    <img src="image/14-1.jpg" alt="">
+
+    <h2 class="Title">
+      한마리 나비가 있다. <br><br>
+      나비는 어디로 날아갈까?
+          </h2>
+
+    <button class="accordion" style="text-align: center;">A 고요한 초원의 목장<img src="./image/15-A.jpg" alt=""></button>
+    <div class="panel">
+    <p>
+      -원하는 세상을 만들어가는 적극적인 행동력- <br>
+      다툼없이 평화로운 세상을 동경하고 있습니다. 이는 자칫 잘못하면 귀찮은 일은 <br>
+      아예하지 않고 나태하게 지내는 삶을 동경하게 됩니다. 그러나 원래 자신이 가지고<br>
+      있는 능력은 적극적으로 다툼과 분쟁을 없애고 평화로운 세계를 만들고자하는 행동력입니다.
+
+    </p>
+    </div>
+
+    <button class="accordion" style="text-align: center;">B 아름다운 장미 정원<img src="./image/15-B.jpg" alt=""></button>
+    <div class="panel">
+    <p>
+      -진품의 가치를 구별할줄 아는 예리한 미의식-<br>
+      아름다움과 감동을 전해주는 세상을 동경하고 있습니다. <br>
+      물론 잘못하면 스스로를 너무 꾸미고 포장해서 진실된 모습을 잃게 될수도 있습니다.<br>
+      그러나 이런 영혼은 진품의 가치를 판단하고 그 가치를 더욱 높여주는 능력을 가지고 있습니다.
+            
+    </p>
+    </div>
+
+    <button class="accordion" style="text-align: center;">C 백목의 숲<img src="./image/15-C.jpg" alt=""></button>
+    <div class="panel">
+    <p>
+      -집착없는 여유로움에서 얻은 진실 판단의 지혜-<br>
+      불안과 공포가 없는 조용한 내면세계를 동경하고 있습니다.<br>
+      따라서 현실적인 번잡함에서 피하고 싶은 마음이 간절할지도 모릅니다. <br>
+      그러나 이런 마음은 물질적인 집착이 없기 때문에 가능합니다.<br>
+      집착이 없는 마음은 깨끗한 마음으로 진실을 판단할 수 있는 큰 능력을 품고있습니다.
+      
+    </p>
+    </div>
+
+    <button class="accordion" style="text-align: center;">D 하늘 높이 구름 사이<img src="./image/15-D.jpg" alt=""></button>
+    <div class="panel">
+    <p>
+      -힘든 일도 흔쾌히 받아들이는 희망적인 자세-<br>
+      구속없이 자유로운 세계를 동경하고 있습니다.<br>
+      물론 자유분방함이 방종이 되어 걷잡을 수 없는 나락으로 빠질 수도 있지만<br>
+      바꾸어 말하면 미래에 대한 자유로운 희망이 될 수도 있습니다.<br>
+      힘든일도 인생의 일부분이라고 생각하는 당신은 다른사라메게도 희망을 줄수있는<br>
+      자유로운 영혼의 힘을 가지고 있습니다.
+      
+    </p>
+    </div>
+
+
+</div>
+
+
+<!-- 다른 심리테스트 리스트  -->
+<div class="margin"></div>
+<div class="title">
+    <img src="image/title.png" alt="">
+    <p>다른 심리테스트<p>
+    <img src="image/title.png" alt="">
+</div>
+
+
+
+ <!-- "include-html" 태그의 "target" 속성에 대치시킬 파일을 지정해준다. -->
+ <include-html target="list.html" completed="headerCompleted"></include-html>
+ <script>includeHtml();</script>
+ <!-- 다른 심리테스트 리스트/  -->
+
+
+
+
+<footer>
+    <span>@2020copy right MISONG KIM</span>
+</footer>
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

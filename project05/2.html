@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FUN FUN 심리테스트</title>
+        <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+        <!-- includeList -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="includeHTML.js"></script>
+
+        <script type="text/javascript">
+        function headerCompleted() {$("#sample").html("");}
+        </script>
+        <!-- includeList/ -->        
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="image/logo.png" alt=""></a>
+    </header>
+
+<div class="quiz">
+    <h2 class="smTitle">[연애에서 내가 주로 하는 실수는 ?]</h2>
+
+    <img src="image/2-1.jpg" alt="">
+
+    <h2 class="Title">엄지손가락 유형으로 알아보는 연애 심리테스트</h2>
+
+    <button class="accordion">1번. 첫 번째 마디가 두 번째 마디보다 길다</button>
+    <div class="panel">
+    <p>
+        열정적이고 헌신적인 사람인 당신, 사랑에 빠지면 상대방에게 집착하기 쉽상이네요<br>
+        지나친 집착은 금물~
+
+    </p>
+    </div>
+
+    <button class="accordion">2번. 첫 번째 마디와 두 번째 마디의 길이가 같다</button>
+    <div class="panel">
+    <p>스스로의 목표를 이루기 위해 계획하는 걸 좋아하는 당신, 연애에서도 당신의 조용하고 차분한 성격이 드러나네요. <br>
+        자신을 잘 드러내지 않아 관계 진전 속도는 조금 느려요.
+    </p>
+    </div>
+
+    <button class="accordion">3번. 첫 번째 마디보다 두 번째 마디가 길다</button>
+    <div class="panel">
+    <p>
+        주변 사람들에게 많은 신뢰를 받는 당신, 관찰을 잘 하고 많은 시간을 사색에 빠져있곤 하는데요. <br>
+        감정을 억제하는 경우가 많아 좋은 인연을 종종 놓치기도 합니다.
+    </p>
+    </div>
+
+</div>
+
+
+<!-- 다른 심리테스트 리스트  -->
+<div class="margin"></div>
+<div class="title">
+    <img src="image/title.png" alt="">
+    <p>다른 심리테스트<p>
+    <img src="image/title.png" alt="">
+</div>
+
+
+
+ <!-- "include-html" 태그의 "target" 속성에 대치시킬 파일을 지정해준다. -->
+ <include-html target="list.html" completed="headerCompleted"></include-html>
+ <script>includeHtml();</script>
+ <!-- 다른 심리테스트 리스트/  -->
+
+
+
+
+<footer>
+    <span>@2020copy right MISONG KIM</span>
+</footer>
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
