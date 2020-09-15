@@ -1,3 +1,88 @@
+// Place your settings in this file to overwrite the default settings
 {
-    "liveServer.settings.port": 5501
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Consolas",
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 80,
+  "editor.fontLigatures": true,
+  "editor.snippetSuggestions": "top",
+  "editor.minimap.enabled": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true,
+    "**/tmp": true
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/coverage": true,
+    "**/ios": true,
+    "**/android": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "html.suggest.html5": true,
+  "npm-intellisense.scanDevDependencies": true,
+  "stylelint.enable": true,
+  "typescript.check.tscVersion": false,
+  "window.zoomLevel": 0,
+  "terminal.external.osxExec": "iTerm.app",
+  "javascript.validate.enable": false,
+  "extensions.autoUpdate": true,
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "Consolas",
+  "terminal.integrated.cursorStyle": "line",
+  "sync.gist": "95e4cfd731754a9c023d59c0538fa6e6",
+  "sync.lastUpload": "2017-06-15T15:06:31.207Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastDownload": "1970-01-01T00:00:00.000Z",
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "color-highlight.markerType": "outline",
+  "vsicons.projectDetection.disableDetect": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "fileHeaderCommentHelper.languageConfigs": {
+    "language_javascript": {
+      "template": [
+        "/**",
+        " * Project: $(projectName)",
+        " * File: $(currentFile)",
+        " * Author: Emanuel Quimper",
+        " */"
+      ]
+    }
+  },
+  "workbench.welcome.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.showUpdateMessage": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "editor.renderIndentGuides": true,
+  "flow.useNPMPackagedFlow": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "prettier.useTabs": false,
+  "prettier.bracketSpacing": true,
+  "sync.quietSync": false,
+  "workbench.colorTheme": "Monokai"
 }
