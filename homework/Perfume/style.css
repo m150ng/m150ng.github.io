@@ -1,24 +1,18 @@
-@charset "UTF-8";
-
-
+@charset "utf-8";
 html,body{
-    font-family: 'Noto Serif', serif;
+    font-family: 'Galdeano', sans-serif;
+    overflow: hidden;
 }
 body{
     background-color: #222;
+    perspective: 700px;
 }
-
-
-
-
-
 /* 전체 레이아웃 */
 .wrapper{
     width: 100vw;
     height: 100vh;
     /* 배경 3D영역으로 만들기 */
-    perspective: 700px;
-    
+    /* perspective: 700px; */
 }
 /* 햄버거메뉴 */
 .btnMenu{
@@ -34,7 +28,9 @@ body{
     top: 50px;
     left: 50px;
     display: none;
-    
+}
+.btnMenu:hover{
+    cursor: pointer;
 }
 /* 왼쪽 메인 메뉴바 */
 .main-menu{
@@ -54,16 +50,13 @@ body{
     transform-origin: left center;
     transform: rotateY(10deg);
     transition: 1s;
-    
 }
 .gnb>ul>li:nth-child(3){
     letter-spacing:3.5px;
- 
 }
 .main-menu.on{
     transform: rotateY(130deg);
     opacity: 0;
-    
 }
 /* 왼쪽 메인바 안의 로고 */
 .main-menu>.logo{
@@ -98,7 +91,7 @@ body{
      /* 3D회전설정- 기준설정 */
      transform-origin: right center;
      transition: 0.5s;
-     perspective: 800px;
+     perspective: 500px;
 }
 .container.show{
     transform: rotateY(-10deg);
@@ -110,7 +103,6 @@ body{
     top: 0;
     left: 0;
     opacity: 0;
-    
 }
 .container>div.item{
     opacity: 1;
@@ -124,24 +116,15 @@ body{
 }
 .container>div:nth-child(1){
     background-color:#37432b;
-   
 }
-
-
-
 /* 컨텐츠 */
-
-.container div {
+.container>div {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
     color: white;
     font-size: 26px;
-
-
-
 }
-
 .container .man div:nth-child(1){
     grid-row: 1;
     grid-column: 1/ span 2;
@@ -162,8 +145,7 @@ body{
 .container .man div:nth-child(6){
     grid-row:2/ span 2;
     grid-column:3/ span 2;
-    background-image: url(./images/M3.jpg);
-    
+    background-image: url(./images/M3.jpg); 
 }
 .container .man div:nth-child(7){
     background-image: url(./images/M5.jpg);
@@ -182,9 +164,6 @@ body{
 .container .man div:nth-child(11){
     background-color: #406290;
 }
-
-
-
 .container .wooman div:nth-child(1){
     background-color: #dc405d;
 }
@@ -221,8 +200,6 @@ body{
 .container .wooman div:nth-child(10){
     background-image: url(./images/W6.jpg);
 }
-
-
 .container .us div:nth-child(1){
     grid-row: 1/span 4;
     grid-column: 1/span 2;
@@ -249,4 +226,13 @@ body{
 }
 .container .us div:nth-child(7){
     background-image: url(./images/U4.jpg);
+}
+
+div{
+    text-align: center;
+    background-size: cover;
+}
+.text{
+    display: inline-block;
+    line-height: 9;
 }
