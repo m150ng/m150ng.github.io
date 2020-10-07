@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대자동차그룹</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    
+</head>
+<body>
+<header>
+
+
+<!-- 상단 시작 -->
+<div id="hd">
+    <div id="hd_wrapper">
+        <div id="logo">
+            <a href="index.html"><img src="./image/logo_w.png" alt="현대자동차그룹"></a>
+        </div>
+
+        <nav id="gnb">
+            <h2>메인메뉴</h2>
+            <div class="gnb_wrap">
+                <ul id="gnb_1dul">
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="sub1.html" target="_self" class="gnb_1da">그룹소개</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="sub1.html" target="_self" class="gnb_2da">경영이념</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">그룹연혁</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">경영성과</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">그룹사</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">완성차</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">철강</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">건설</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">기술혁신</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">자율주행</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">수소전기차</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">에너지</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">전략투자</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">전략투자</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">인공지능로봇</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">오토모티브</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="sub2.html" target="_self" class="gnb_1da">지속가능경영</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="sub2.html" target="_self" class="gnb_2da">환경경영</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">사회공헌</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">인재채용</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">인재상</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">채용정보</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">뉴스</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">보도자료</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">그룹방송</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        </nav>
+
+    </div>
+
+    <!-- <div class="Liner"></div> -->
+
+    <script>
+
+    $(function(){
+
+        setTimeout(function(){
+          $('.sub_visual').addClass('on');
+        },100);
+
+        $(".all_menu_bt").click(function(){
+            $("#gnb_all").addClass('on');
+        });
+
+        $("#gnb_all .gnb_al_li .gnb_al_a").click(function(){
+            $(this).find('+ ul').slideToggle(0);
+        });
+
+        $(window).scroll(function(){
+            var sct = $(window).scrollTop();
+            if(sct>0){
+              $('#hd').addClass('on2');
+            }else{
+              $('#hd').removeClass('on2');
+            }
+          });
+
+
+        $(".gnb_close_btn, #gnb_all_bg").click(function(){
+            $("#gnb_all").removeClass('on');
+        });
+
+        $('#gnb #gnb_1dul').hover(function(){
+         $('#gnb').addClass('on');
+         $('.gnb_2dul').css('display','block');
+         setTimeout(function(){
+           $('.gnb_2dul').addClass('on');
+         },500);
+       }, function(){
+         $('#gnb').removeClass('on');
+         $('.gnb_2dul').css('display','none');
+         $('.gnb_2dul').removeClass('on');
+       })
+
+    });
+
+    </script>
+</div>
+<!-- 상단 끝 -->
+</header>
+
+
+
+<!-- 비주얼 배경 -->
+<div id="body_content">
+    <video autoplay muted loop id="bgVideo">
+      <source src="./image/올 뉴 투싼 언베일링.mp4" type="video/mp4">
+    </video>
+    
+    <div class="content">
+      <h1>세계와 경쟁하는 <br> 현대자동차그룹입니다</h1><br>
+      <p>
+        완성차 부문: 글로벌 자동차산업 리더로써<br>
+        고객 최우선 경험의 가치를 실천하고 있습니다
+      </p>
+
+</div>
+
+
+
+
+<!-- 그룹뉴스 -->
+<div class="news_wrapper">
+    <div class="news">
+        <h1>그룹뉴스</h1>
+        <a href="#">
+            <p class="news_content">
+                현대자동차, '더 뉴 코나' 내외장 디자인 공개
+                <span>2020-09-02  |  현대자동차</span>
+            </p>
+        </a>
+        <a href="#">
+            <p class="news_content">
+                현대자동차그룹, 2020 IDEA 디자인 어워드 수상
+                <span>2020-09-21  |  현대자동차그룹</span>
+            </p>
+        </a>
+        <a href="#">
+            <p class="news_content">
+                기아자동차, 전기차 선도 브랜드 구축 사업 속도
+                <span>2020-09-21  |  기아자동차</span>
+            </p>
+        </a>    
+        <a href="#">
+            <p class="news_content">
+                현대글로비스, 태국 재계 1위 CP그룹과 파트너십 구축
+                <span>2020-09-21  |  현대글로비스</span>
+            </p>
+        </a>
+    </div>
+</div>
+<!-- 그룹뉴스 /-->
+
+
+
+<!-- 컨텐츠 -->
+
+    <!-- article-default -->
+    <article class="article-default pr mb100">
+
+        <!-- Global Growth -->
+        
+        <!-- <h2 class="h2_main global"><span onclick="openTab(event, 'global')" class="active">미래를 향한 도약</span></h2> -->
+        <span class="h2_main global active" onclick="openTab(event, 'global')" >미래를 향한 도약</span>
+        <div id="global" class="main_cont" style="display:block; margin-bottom:12px;">
+            <ul>
+                <li>
+                    <a href="sub1.html">
+                        <img class="di-320x240" src="./image/경영이념.jpg" alt="경영이념" title="경영이념">
+                        <strong>경영이념</strong>
+                        <span>창의적 사고와 끝없는 도전을 통해 새로운 미래를 <br>창조함으로써 인류사회의 꿈을 실현합니다.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="di-320x240" src="./image/기술혁신.jpg" alt="기술혁신" title="기술혁신">
+                        <strong>기술혁신</strong>
+                        <span>트랜드 분석과 기술개발을 통해<br>미래 모빌리티를 선도합니다.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="di-320x240" src="./image/전략투자.jpg" alt="전략투자" title="전략투자">
+                        <strong>전략투자</strong>
+                        <span>신규사업의 기회 발굴 및 신기술 확보를 통해<br>미래 가치를 만들어 냅니다.</span>
+                    </a>
+                </li>
+                </ul>
+            <ul class="clear">
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/보도자료1.jpg" alt="현대자동차, 신형 투싼 티저 이미지 최초 공개" title="현대자동차, 신형 투싼 티저 이미지 최초 공개">
+                        <strong>현대자동차, ‘The all-new TUCSON’ 세계 최초 공개</strong>
+                        <span><span class="ellipsis">- 디지털 월드 프리미어 통해 신차 공개…그래픽 요소 활용해 생동감 있게 전달<br>- 스마트 TV 기반 글로벌 콘텐츠 플랫폼 ‘채널 현대’로도 전 세계 주요 지역 중계</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/보도자료2.jpg" alt="제네시스, ‘더 뉴 G70’ 이미지 공개" title="제네시스, ‘더 뉴 G70’ 이미지 공개">
+                        <strong>제네시스, ‘더 뉴 G70’ 이미지 공개</strong>
+                        <span><span class="ellipsis">- 제네시스 G70, 제네시스 브랜드 디자인 정체성 더한 역동적인 외장으로 재탄생<br>- 실내는 강화된 인포테인먼트 시스템 적용해 확장된 사용자 경험 제공</span></span>
+                    </a>
+                </li>
+                </ul>
+            <ul class="clear">                     
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/TV1.jpg" alt="올 뉴 투싼 언베일링 필름 | 현대자동차" title="올 뉴 투싼 언베일링 필름 | 현대자동차">
+                        <strong>올 뉴 투싼 언베일링 필름 | 현대자동차</strong>
+                        <span><span class="ellipsis" style="overflow-wrap: break-word;">- 2015년 3세대 공개 이후 무려 5년 만에 컴백한 다이나믹한 신형 투싼을 만나보세요.</span></span>
+                    </a>
+                </li>                  
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/TV2.jpg" alt="스팅어 마이스터 광고-스포츠 스타 편" title="스팅어 마이스터 광고-스포츠 스타 편">
+                        <strong>스팅어 마이스터 광고-스포츠 스타 편 | 기아자동차</strong>
+                        <span><span class="ellipsis" style="overflow-wrap: break-word;">- 지금, 그대로의 우리가 좋다<br>- Just the way you are</span></span>
+                    </a>
+                </li>                      
+            </ul>
+        </div>
+
+        <!-- Society Contribution -->
+        <!-- <h2 class="h2_main society"><span onclick="openTab(event, 'society')">세상에 전하는 행복</span></h2> -->
+        <span class="h2_main society" onclick="openTab(event, 'society')">세상에 전하는 행복</span>
+        <div id="society" class="main_cont" style="display: none;"style="margin-bottom:12px;">
+            <ul>
+                <li>
+                <a href="sub2.html">
+                        <img class="di-320x240" src="./image/사회공헌.jpg" alt="사회공헌체계" title="사회공헌체계">
+                        <strong>사회공헌체계</strong>
+                        <span>현대자동차그룹은 ‘함께 움직이는 세상’을 꿈꾸며 함께 가는 사회공헌을 실천합니다.</span>
+                    </a>
+                </li>
+                <li>
+                <a href="#">
+                        <img class="di-320x240" src="./image/스포츠후원.jpg" alt="스포츠후원" title="스포츠후원">
+                        <strong>스포츠후원</strong>
+                        <span>월드컵대회의 공식 후원사로서 참여하여 축구를 <br>사랑하는 전세계인에게 가까이 다가갈 것입니다.</span>
+                    </a>                        
+                </li>
+                <li>
+                <a href="#">
+                        <img class="di-320x240" src="./image/모터스.jpg" alt="모터스라인" title="모터스라인">
+                        <strong>모터스라인</strong>
+                        <span>매월 문화, 예술, 여행 등의 다양한 스토리와 <br>함께하는 현대자동차그룹의 소식을 전합니다.</span>
+                    </a>                        
+                </li>
+            </ul>
+            <ul class="clear">
+                <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/보도자료3.jpg" alt="현대자동차 월드랠리팀, 2020 WRC 2연속 더블 포디움 달성" title="현대자동차 월드랠리팀, 2020 WRC 2연속 더블 포디움 달성">
+                        <strong>현대자동차 월드랠리팀, 2020 WRC 2연속 더블 포디움 달성</strong>
+                        <span><span class="ellipsis">- 현대 월드랠리팀 티에리 누빌, 2020 WRC 5차 터키 랠리서 준우승 차지<br>- 팀 동료 세바스티앙 뢰브도 3위에 오르며 현대팀 더블 포디움 달성</span></span>
+                    </a>
+                </li>
+                <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/보도자료4.jpg" alt="현대자동차그룹, ‘신중년 경영혁신 프로젝트 5 Weeks’ 온라인 발대식 개최" title="현대자동차그룹, ‘신중년 경영혁신 프로젝트 5 Weeks’ 온라인 발대식 개최">
+                        <strong>현대자동차그룹, ‘신중년 경영혁신 프로젝트 5 Weeks’ 온라인 발대식 개최</strong>
+                        <span><span class="ellipsis">- ‘굿잡 5060’이 신규 런칭하는 신중년과 사회적 기업 간 협력 프로젝트<br>- 언택트 트렌드 반영한 온라인 발대식으로 세대 간 협력 모델의 시작 알려</span></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="clear">                    
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/TV3.jpg" alt="나는 트럭커입니다 | Partner in My Way" title="나는 트럭커입니다 | Partner in My Way">
+                        <strong>나는 트럭커입니다 | Partner in My Way</strong>
+                        <span><span class="ellipsis" style="overflow-wrap: break-word;">- 한 가정의 남편, 딸바보 아빠, 나는 트럭커입니다.</span></span>
+                    </a>
+                </li>          
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="di-486x273" src="./image/TV4.jpg" alt="사회적 교통약자와 세상을 연결하는 '다누림 쏠라티 미니버스'" title="사회적 교통약자와 세상을 연결하는 '다누림 쏠라티 미니버스'">
+                        <strong>사회적 교통약자와 세상을 연결하는 '다누림 쏠라티 미니버스'</strong>
+                        <span><span class="ellipsis" style="overflow-wrap: break-word;">- 현대자동차 다누림 쏠라티 미니버스로 사회적 교통 약자들이 갈수 없는 곳은 없도록 '연결'을 지원하겠습니다.</span></span>
+                    </a>
+                </li>                   
+            </ul>
+        </div>
+        
+        <script>
+            function openTab(evt, tabName) {
+                var i, main_cont, h2_main;
+                main_cont = document.getElementsByClassName("main_cont");// 컨텐츠를 불러옵니다.
+                for (i = 0; i < main_cont.length; i++) {
+                main_cont[i].style.display = "none";//컨텐츠를 모두 숨깁니다. 
+                }
+                h2_main = document.getElementsByClassName("h2_main");//탭을 불러옵니다.
+                for (i = 0; i < h2_main.length; i++) {
+                h2_main[i].className = h2_main[i].className.replace("active", "");//탭을 초기화시킵니다. 
+                }
+                document.getElementById(tabName).style.display = "block"; //해당되는 컨텐츠만 보여줍니다. 
+                evt.currentTarget.className += " active";//클릭한 탭을 활성화시킵니다. 
+            }
+        </script>
+
+        
+        <!-- SNS 영역 -->
+        <div class="snsWrap"> 
+            <h2>현대자동차그룹 SNS</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns1.png" alt="SNS - 페이스북" /></span>
+                        <strong class="tit">페이스북</strong>
+                        <span class="count">1,633,956<em>Page Likes</em></span>                          
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns2.png" alt="SNS - HMG저널 페이스북" /></span>
+                        <strong class="tit">HMG저널 페이스북 </strong>
+                        <span class="count">82,028<em>Page Likes</em></span>                           
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="img"><img src="./image/sns3.png" alt="SNS - 트위터" /></span>
+                        <strong class="tit">트위터</strong>
+                        <span class="count">485,345<em>Followers</em></span>                                
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns4.png" alt="SNS - 인스타그램" /></span>
+                        <strong class="tit">인스타그램</strong>
+                        <span class="count">320,454<em>Followers</em></span>                               
+                    </a>
+                </li>                                             
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns5.png" alt="SNS - 유튜브" /></span>
+                        <strong class="tit">유튜브</strong>
+                        <span class="count">222,451,638<em>Views</em></span>                                
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                            <span class="img"><img src="./image/sns6.png" alt="SNS - 네이버 블로그" /></span>
+                        <strong class="tit">네이버 블로그</strong>
+                        <span class="count">12,846,749<em>Views</em></span>                                
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns7.png" alt="SNS - 네이버 포스트" /></span>
+                        <strong class="tit">네이버 포스트</strong>
+                        <span class="count">17,800,786<em>Views</em></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns8.png" alt="SNS - 네이버TV" /></span>
+                        <strong class="tit">네이버TV</strong>
+                        <span class="count">6,483,681<em>Views</em></span>                                
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns9.png" alt="SNS - 카카오 TV" /></span>
+                        <strong class="tit">카카오 TV</strong>
+                        <span class="count">2,650,866<em>Views</em></span>                                
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <span class="img"><img src="./image/sns10.png" alt="SNS - 브런치" /></span>
+                        <strong class="tit">브런치</strong>
+                        <span class="count">1,343,376<em><em>Views</em></em></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- //SNS 영역 -->
+
+        <div>
+            <a href="#" class="btnSnsView">현대자동차그룹 SNS 더보기 <span>&gt;</span></a>
+        </div>
+
+    </article>
+    <!-- //article-default -->
+
+<!-- 컨텐츠/ -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer">
+            <ul class="comm-menu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#" class="strong">개인정보 처리방침</a></li>
+                <li><a href="#">법적고지</a></li>               
+                <li><a href="#">웹접근성안내</a> 
+                <li><a href="#" >뉴스레터신청</a></li>
+                <li><a href="#">RSS feeds</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+                <li class="language"><a href="#" class="ko on">KOR</a> / <a href="#">ENG</a> </li>
+            </ul>
+            
+            <p class="copy">COPYRIGHT 2020 HYUNDAI MOTOR GROUP, ALL RIGHTS RESERVED.</p>
+                            
+            <dl class="select-g">
+                <dt><a href="#" id="group-close">그룹사 바로가기</a></dt> 
+                <dd>
+                    <a href="#" class="close">닫기</a>
+                </dd>
+            </dl>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대자동차그룹</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body id="sub1">
+<header>
+
+<!-- 상단 시작 -->
+<div id="hd">
+    <div id="hd_wrapper">
+        <div id="logo">
+            <a href="index.html"><img src="./image/logo_w.png" alt="현대자동차그룹"></a>
+        </div>
+
+        <nav id="gnb">
+            <h2>메인메뉴</h2>
+            <div class="gnb_wrap">
+                <ul id="gnb_1dul">
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="sub1.html" target="_self" class="gnb_1da">그룹소개</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="sub1.html" target="_self" class="gnb_2da">경영이념</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">그룹연혁</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">경영성과</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">그룹사</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">완성차</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">철강</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">건설</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">기술혁신</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">자율주행</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">수소전기차</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">에너지</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">전략투자</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">전략투자</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">인공지능로봇</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">오토모티브</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="sub2.html" target="_self" class="gnb_1da">지속가능경영</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="sub2.html" target="_self" class="gnb_2da">환경경영</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">사회공헌</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">인재채용</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">인재상</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">채용정보</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="gnb_1dli gnb_al_li_plus" style="z-index:999">
+                        <a href="#company" target="_self" class="gnb_1da">뉴스</a>
+                        <span class="bg">하위분류</span>
+                        <div class="gnb_2dul">
+                            <ul class="gnb_2dul_box">
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">보도자료</a></li>
+                                <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">그룹방송</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        </nav>
+
+    </div>
+
+    <div class="Liner"></div>
+
+    <script>
+
+    $(function(){
+
+        setTimeout(function(){
+          $('.sub_visual').addClass('on');
+        },100);
+
+        $(".all_menu_bt").click(function(){
+            $("#gnb_all").addClass('on');
+        });
+
+        $("#gnb_all .gnb_al_li .gnb_al_a").click(function(){
+            $(this).find('+ ul').slideToggle(0);
+        });
+
+        $(window).scroll(function(){
+            var sct = $(window).scrollTop();
+            if(sct>0){
+              $('#hd').addClass('on2');
+            }else{
+              $('#hd').removeClass('on2');
+            }
+          });
+
+
+        $(".gnb_close_btn, #gnb_all_bg").click(function(){
+            $("#gnb_all").removeClass('on');
+        });
+
+        $('#gnb #gnb_1dul').hover(function(){
+         $('#gnb').addClass('on');
+         $('.gnb_2dul').css('display','block');
+         setTimeout(function(){
+           $('.gnb_2dul').addClass('on');
+         },500);
+       }, function(){
+         $('#gnb').removeClass('on');
+         $('.gnb_2dul').css('display','none');
+         $('.gnb_2dul').removeClass('on');
+       })
+
+    });
+
+    </script>
+</div>
+<!-- 상단 끝 -->
+</header>
+        <!-- CONTENT -->
+        <div id="container">
+            <!-- contents -->
+        <section id="contents" class="visual-csr2">
+
+            <!-- ******************************** [ START ] ********************************  -->
+            <header class="title typo-fff">
+                <h1>사회공헌체계</h1>
+                <p class="desc">현대자동차그룹은 ‘함께 움직이는 세상’을 꿈꾸며, <br>모든 이해관계자와 함께 가는 사회공헌을 실천합니다. </p>
+            </header>
+
+            <!-- article-default -->
+            <article class="article-default bg-fff mt145">
+
+                <!-- sub-title -->
+                <h1 class="h1-a2">비전 &amp; 슬로건</h1>
+                <!-- 2014-05-22 -->
+                <p class="desc-a1 ml50">현대자동차그룹은 고객, 사회와 함께 더 나은 세상을 만들어 갑니다. </p>
+                <!-- //2014-05-22 -->
+                <p><img src="./image/visual-system-vision.gif" alt="미래를 향한 진정한 파트너"></p><!-- 170802 수정 -->
+                <!-- 170802 추가 -->
+                <p class="desc-a1 ml50 mt50">현대자동차그룹은 앞으로의 사회공헌활동에 변화하는 사회상과 시대적 과제를 반영하고 더욱 체계적으로 운영하기 위해 <br/>
+                새로운 사회공헌 중장기 비전을 선포하였습니다. 이를 기반으로 현대자동차그룹은 모든 이해관계자와 함께 <br/>
+                지속가능한 미래 가치를 창조하고 공유하는 기업이 되고자 노력할 것입니다.</p>
+                <!-- //170802 추가 -->                
+                <!-- system-box1 -->
+                <div class="system-box1">
+                    <p class="photo"><img src="./image/img-system1.jpg" alt="함께 움직이는 세상"></p><!-- 161014 웹접근성 수정 -->
+                    <!-- 170802 수정 -->
+                    <p class="txt">현대자동차그룹의 사회공헌 철학을 집약적으로 표현한 슬로건으로 <br/>
+                    ‘함께’는 사회와 조화를 이루는 파트너십을, ‘움직이는’은 <br/>
+                    발전지향적이고 지속적인 변화에 대한 의지를, ‘세상’은 세계 <br/>
+                    방방곡곡에 전해질 현대자동차그룹의 사랑과 꿈을 그리고 있습니다. <br/>
+                    ‘함께 움직이는 세상’은 이웃과 함께 사회와 함께 사랑과 실천으로 <br/>
+                    세상을 변화시키고자 하는 의지를 담은 슬로건입니다.</p>
+                    <!-- //170802 수정 -->                    
+                </div>
+
+            </article>
+            <!-- //article-default -->
+
+            <!-- article-default -->
+            <article class="article-default bg-fff mt1">
+
+                <!-- sub-title -->
+                <h1 class="h1-a2">대표사업</h1>
+                <!-- 170802 수정 -->
+                <p class="desc-a1 ml50">현대자동차그룹은 글로벌 기업으로서 책임감을 갖고 ‘6대무브(MOVE)’를 기반으로 다양한 사회공헌활동을 통해 <br/>
+                더 나은 미래를 향한 인류 공통의 목표를 실현해 나가고 있습니다.<br/><br/>
+                ‘문화예술’ 사업을 통해 꿈을 가진 청년을 문화예술인재로 키우고 소외계층에게는 문화체험의 기회를 제공합니다. <br/>
+                또한 콘서트, 뮤지컬 등 다양한 문화공연으로 이해관계자와 원활히 소통함으로써 문화예술로 하나 되는 풍요로운 세상을 만들어갑니다.</p>
+                <div class="visual-world">
+                    <h2>6대무브</h2>
+                    <div class="system-list">
+                        <ul>
+                            <li>
+                                <div class="img-warp"><img src="./image/logo-system-dream.gif" alt="dreammove" /></div>
+                                <p>사회적 약자 자립 지원 <br/>및 인재육성</p>
+                            </li>
+                            <li>
+                                <div class="img-warp"><img src="./image/logo-system-next.gif" alt="nextmove" /></div>
+                                <p>계열사 사업 역량을 <br/>활용한 사회공헌</p>
+                            </li>
+                            <li>
+                                <div class="img-warp"><img src="./image/logo-system-easy.gif" alt="easymove" /></div>
+                                <p>교통약자 및 사회적 <br/>약자 이동편의 증진</p>
+                            </li>
+                            <li>
+                                <div class="img-warp"><img src="./image/logo-system-safe.gif" alt="safemove" /></div>
+                                <p>교통안전 및 <br/>사회안전 증진</p>
+                            </li>
+                            <li>
+                                <div class="img-warp"><img src="./image/logo-system-green.gif" alt="greenmove" /></div>
+                                <p>환경보전 및 <br/>기후변화 대응</p>
+                            </li>
+                            <li>
+                                <div class="img-warp"><img src="./image/logo-system-happy.gif" alt="happymove" /></div>
+                                <p>임직원 및 <br/>고객 참여 자원봉사</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!-- //article-default -->
+
+            <article class="article-default bg-fff mt1">
+                <!-- sub-title -->
+                <h1 class="h1-a2">6대무브</h1>
+                <span class="h1-a2-sm">
+                <h2 class="h1-a2"><a href="#">드림무브</a></h2>
+                <h2 class="h1-a2"><a href="#">넥스트무브</a></h2>
+                <h2 class="h1-a2"><a href="#">이지무브</a></h2>
+                <h2 class="h1-a2"><a href="#">세이프무브</a></h2>
+                <h2 class="h1-a2"><a href="#">그린무브</a></h2>
+                <h2 class="h1-a2"><a href="#">해피무브</a></h2></span><br>
+
+                <div id="dream-box" style="display:block">
+                <!-- Tab-area -->
+                <div class="tab-area">
+                     <!-- dream -->
+                        <!-- system-wrap -->
+                        <div class="system-wrap2 mb100">
+                            <div class="focus-wrap mt40">
+                                <div class="photo"><img src="./image/img-system-dream.jpg" alt=""></div>
+                                <dl class="dream-move-text">
+                                    <dt>세상의 꿈을 이루어가다 <br/>Dream Move</dt>
+                                    <dd class="desc">
+                                        드림무브는 청년과 사회취약계층을 대상으로 <br/>
+                                        창업지원 및 자립역량강화 프로그램을 통해 스스로 일어서고 <br/>
+                                        삶을 변화시킴으로써 소중한 꿈을 이루어갑니다.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--// Tab-area -->
+            </article>
+            <!-- //article-default -->
+
+            <!-- article-default -->
+            <article class="article-default bg-fff mt1">
+                <h1 class="h1-a2">문화예술</h1>
+                <p class="desc-a1 ml50">
+                    &lt;문화예술&gt; 사업은 꿈을 가진 청년을 문화예술 인재로 키우고 소외계층에게는 문화체험의 기회를 제공합니다.  <br/>
+                    삶에 감동을 더하는 다양한 문화공연으로 이해관계자와 소통함으로써 문화예술로 하나 되는 풍요로운 세상을 만들어갑니다.
+                </p>
+                <div class="tab-area mt50">
+                    <div id="person-box" style="display:block">
+                        <div class="system-wrap mb100">
+                            <!-- <button class="btn-slide-pre off" title="이전"><img src="./image/btn_slide_pre.gif" alt="이전"></button> -->
+                            <button class="btn-slide-nxt" title="다음"><img src="./image/btn_slide_nxt.gif" alt="다음"></button>
+                            <div class="page">
+
+                            </div>
+                             <div class="focus-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="./image/img-system-cultureart1.jpg" alt="">
+                                        </div>
+                                        
+                                        <dl>
+                                            <dt>현대차그룹 대학 연극·뮤지컬 페스티벌</dt>
+                                            <dd>
+                                                2019년 일곱 번째 대회를 개최했고, 전국 51개 대학 74개 팀, 2,300여 명이 5개월간<br/> 
+                                                치열한 예선전을 거쳐 총 12개팀이 서경대학교 공연예술센터(SKON)에서 본선<br/>
+                                                경연을 벌였습니다. 2017년 뮤지컬 '겨울 공주 평강 이야기'와 2018년 연극<br/>
+                                                ‘카포네 트릴로지’가 H-스타 시어터 무대에 올랐습니다.
+                                            </dd>
+                                        </dl>                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- //article-default -->
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+    <div class="footer">
+        <ul class="comm-menu">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#" class="strong">개인정보 처리방침</a></li>
+            <li><a href="#">법적고지</a></li>               
+            <li><a href="#">웹접근성안내</a> 
+            <li><a href="#" >뉴스레터신청</a></li>
+            <li><a href="#">RSS feeds</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">찾아오시는길</a></li>
+            <li class="language"><a href="#" class="ko on">KOR</a> / <a href="#">ENG</a> </li>
+        </ul>
+        
+        <p class="copy">COPYRIGHT 2020 HYUNDAI MOTOR GROUP, ALL RIGHTS RESERVED.</p>
+                        
+        <dl class="select-g">
+            <dt><a href="#" id="group-close">그룹사 바로가기</a></dt> 
+            <dd>
+                <a href="#" class="close">닫기</a>
+            </dd>
+        </dl>
+    </div>
+    </footer>
+    <!-- //footer -->
+
+</body>
+</html>
