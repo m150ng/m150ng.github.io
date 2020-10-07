@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+body{
+    overflow: none;
+    font-family: 'Single Day', cursive;
+}
+#wrapper{
+    width: 100%;
+}
+.title{
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 82px;
+    letter-spacing: 0px;
+    color: #FF6A6A;
+    opacity: 1;
+}
+p{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: #FF6A6A;
+    opacity: 1;
+    margin-bottom: 49px;
+}
+.visual{
+
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+.MCimg1{
+    z-index: 99;
+    cursor: pointer;
+}
+.clickme{ 
+    position: absolute;
+    top: 30%;
+    left: 55%;
+} 
+
+.animal{
+    position: relative;
+}
+.animals{
+    position: absolute;
+    left: 42%;
+    bottom: 16%;
+    opacity: 0;
+}
+
+.retry{
+    display: inline-block;
+    position: absolute;
+    left: 220px;
+    bottom: 30px;
+    opacity: 0;
+    cursor:pointer
+}
+
+.ball{
+    z-index: -99;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    opacity: 0;
+}
+.b2{
+    margin-bottom: 155px;
+    margin-left: 291px;
+}
+
+
+@keyframes movingleft {
+    0% {
+        transform: translateX(0px);}
+    100% {
+        transform: translateX(-200px);}
+} 
+
+
+.movingleft {
+    animation-duration: 1s;
+    animation-name: movingleft;
+    animation-fill-mode: both;
+}
+
+
+ @keyframes takeball{
+  0% {
+      transform: scale(0.5);
+      transform: translateX(0px);
+      transform: translateY(0px);
+      opacity: 0;
+  }
+  100%{
+      transform: scale(1);
+      transform: translate(300px,-210px);
+      opacity: 1;
+  }
+}
+.takeball{
+  animation-duration: 1s;
+  animation-name: takeball;
+  animation-fill-mode: both ;
+}
+
+
+
+
