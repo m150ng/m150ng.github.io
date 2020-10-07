@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=500, user-scalable=no">
+        <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png">
+        <title>CHANEL</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- 원페이지스크롤 -->
+        <link rel="stylesheet" type="text/css" href="full-page-scroll.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- 원페이지스크롤/ -->
+    </head>
+
+
+
+    <body>
+        <!-- 500*960 -->
+        <div id="wrapper">
+            <!-- 햄버거메뉴 -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+                <a href="./collection.html">COLLECTION</a>
+                <a href="./RTW.html">READY TO WEAR</a>
+                <a href="#">BAG</a>
+                <a href="#">ACCESSORY</a>
+                <a href="./news.html">CHANEL NEWS</a>
+                <div class="WB"></div>
+                <a href="#">
+                    <img src="./image/wish.png" alt="">WISH LIST
+                </a>
+            </div>
+        
+            <span class="hamburgerM" style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="HMB"></div>
+            <div class="HMB"></div>
+            <div class="HMB"></div></span>
+            
+            <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "500px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+            <!-- 햄버거메뉴/ -->
+
+
+            <!-- 검색 버튼 -->
+            <div class="search">
+                <img src="./image/search.png" alt="">
+            </div>
+            <!-- 검색 버튼 /-->
+
+            <!-- 찜 -->
+            <div class="wish">
+                <img src="./image/wish.png" alt="">
+            </div>
+            <!-- 찜 /-->
+
+
+            <!-- 원페이지 스크롤 -->
+            <div id="main" class="scroll-container">
+                <section class="section1">
+                    <div class="fullpage">
+                        <video autoplay muted loop  >
+                            <source src="./video/collection.mp4" type="video/mp4">
+                        </video>
+                        <div class="layer">
+                            <h1>COLLECTION</h1>
+                            <p>2020/21 가을~겨울 부띠끄</p>
+                            <button type="button" onclick="location.href='./collection.html' ">VIEW</button>
+                        </div>                
+                    </div>
+                </section>
+                <section class="section2">
+                    <div class="fullpage">
+                        <video autoplay muted loop  >
+                            <source src="./video/readyTowear.mp4" type="video/mp4">
+                        </video> 
+                        <div class="layer">
+                            <h1>READY TO WEAR</h1>
+                            <p>샤넬 2020/21 가을-겨울 레디-투-웨어 컬렉션
+                                <br>#비디오 기욤 들라페리에</p>
+                            <button type="button" onclick="location.href='./RTW.html' ">VIEW</button>
+                        </div>                     
+                    </div>
+                </section>
+                <section class="section3">
+                    <div class="fullpage">
+                        <video autoplay muted loop>
+                            <source src="./video/bag.mp4" type="video/mp4">
+                        </video> 
+                        <div class="layer">
+                            <h1>BAG</h1>
+                            <p>시즌 신상품 핸드백</p>
+                            <button type="button" onclick="location.href='./RTW.html' ">VIEW</button>
+                        </div>       
+                    </div>
+                </section>
+                <section class="section4">
+                    <div class="fullpage">
+                        <img src="./image/news.jpg">
+                        <div class="layer">
+                            <h1>CHANEL NEWS</h1>
+                            <p>샤넬의 레디투웨어 컬렉션 소식을 받아보세요</p>
+                            <button type="button" onclick="location.href='./news.html' ">VIEW</button>
+                        </div>       
+                    </div>
+                </section>
+
+            </div>
+            <script src="full-page-scroll.js"></script>
+            <script type="text/javascript">
+                new fullScroll({
+                    displayDots: true,
+                    dotsPosition: 'left',
+                    animateTime: 0.7,
+                    animateFunction: 'ease'
+                });
+            </script>
+            <!-- 원페이지 스크롤 -->
+
+            </div>
+
+
+
+
+
+    </body>
+</html>
+
+
+
