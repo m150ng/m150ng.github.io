@@ -138,7 +138,7 @@
     outline: 0;
 
   }
-  
+
   /* .topnav .search-container button:hover {
     background: #ccc;
   } */
@@ -169,16 +169,19 @@
     line-height: 2.5em;
     padding-left: 25vw;
 }
-.mbn_wr>h2{
+.mbn_wr>a>h2{
     font-size: 33px;
     font-weight: bold;
+    color: #000;
 }
-.mbn_wr>h3{
+.mbn_wr>a>h3{
     font-size: 25px;
     font-weight: bold;
+    color: #000;
 }
-.mbn_wr>p{
+.mbn_wr>a>p{
     font-weight: bold;
+    color: #000;
 }
 .mbn_wr .line{
     width: 100%;
@@ -218,6 +221,7 @@
     font-size: 13PX;
     font-weight: bold;
     text-align: right;
+    color: #000;
 }
 .pa_ex_item .empty{
     display: block;
@@ -265,6 +269,7 @@
     font-size: 13PX;
     font-weight: bold;
     text-align: right;
+    color: #000;
 }
 .notice_item .empty{
     display: block;
@@ -308,6 +313,7 @@
     font-size: 13PX;
     font-weight: bold;
     text-align: right;
+    color: #000;
 }
 .edu_item .empty{
     display: block;
@@ -352,6 +358,7 @@
     font-size: 13PX;
     font-weight: bold;
     text-align: right;
+    color: #000;
 }
 
 
@@ -389,6 +396,7 @@
     font-size: 13PX;
     font-weight: bold;
     text-align: right;
+    color: #000;
 }
 
 
@@ -621,6 +629,9 @@
     color: black;
     margin-right: 1em;
 }
+.pa_tit_item .year a:hover{
+    color: red;
+}
 .pa_tit_item .line{
     width: 350px;
 }
@@ -755,6 +766,7 @@
 }
 .studio_item p{
     line-height: 1.5em;
+    margin-left: 3em;
 }
 
 
@@ -876,6 +888,11 @@
     text-align: right;
 }
 
+.edulist_item p span:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
 /* ========================교육/행사PAGE======END=================== */
 
 
@@ -997,7 +1014,11 @@
 .commulist_item:nth-child(2){
     text-align: right;
 }
-
+.commulist_item p span:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
 /* ========================커뮤니티PAGE======END=================== */
 
 
