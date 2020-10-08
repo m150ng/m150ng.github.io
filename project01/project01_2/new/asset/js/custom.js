@@ -195,10 +195,10 @@ function adjustScript() {
                 }
             });
 
-        } else { //pc  
-            aboutSlide.destroy(true, true);
-            $('.about003 .slide-bx').removeAttr('style');
-            $('.about003 .slide-bx').removeAttr('style'); 
+        // } else { //pc  
+        //     aboutSlide.destroy(true, true);
+        //     $('.about003 .slide-bx').removeAttr('style');
+        //     $('.about003 .slide-bx').removeAttr('style'); 
         }
     }
     
