@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+
+<title></title>
+<link rel="icon" type="image/png" sizes="16x16" href="./new/asset/images/favicon.png">
+    
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">     -->
+<link rel="stylesheet" href="./new/asset/css/style.css">
+
+<script src="./new/asset/js/jquery.min.js"></script>
+<script src="./new/asset/js/common.js"></script>
+<script src="./new/asset/js/nprogress.js"></script>
+<script src="./new/asset/js/custom.js"></script>
+
+<script src="../song/js/common.js"></script>
+<script src="../song/js/wrest.js"></script>
+
+
+
+    
+</head>
+    
+<body>
+
+<!-- ===== wrap ====== -->
+<div id="wrap">
+    
+    <!-- ===== header ====== -->
+    <header id="header" class="opacity" data-animation="fadeInDown">
+        <h1 class="logo"><a href="index.html"></a></h1>
+        <a href="#none" class="btMn"><i></i><i></i><span>menu</span></a>
+    </header>
+    <!-- ===== /header ====== -->
+    
+    <div id="container" class="contact">              
+                
+        <div class="con-bx">
+            
+            <div class="tit-area">
+                <h3 class="lg-tit opacity" data-animation="fadeInUp">Contact</h3>
+                <div class="desc opacity" data-animation="fadeInUp" data-delay=".5">
+                    <span>
+                        제 포트폴리오를 찾아주셔서 감사합니다<br><br>
+                        저의 전문 분야와 기술 및 경력에 대한 <br>
+                        이해를 돕기 위해 마련된 홈페이지입니다.<br>
+                        각 탭에서 작업한 프로젝트와 저의 열정이<br>
+                        가득한 개인 프로젝트를 확인하실 수 있습니다.<br><br>
+
+                        홈페이지를 둘러보시고 궁금하신 점이 있다면<br> 
+                        편하게 문의해주세요.                        
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-wr">
+                <div class="contact01">                    
+                    <ul>
+                        <li class="opacity" data-animation="fadeInUp" data-delay=".8">
+                            <strong>Tel</strong>
+                            <span>010 7254 7507</span>
+                        </li>
+                        <li class="opacity" data-animation="fadeInUp" data-delay="1.3">
+                            <strong>Email</strong>
+                            <span>hnjm0402@naver.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact02">
+                    <a href="javascript:reg01();" class="itm opacity" data-animation="fadeInUp" data-delay=".2">
+                    <strong><em>C</em><em>o</em><em>n</em><em>t</em><em>a</em><em>c</em><em>t</em><i></i></strong>
+                        <span>
+                            메일을 보내주시면 평일기준2일내로 답장을 드리겠습니다.
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="copy">© misong kim. All rights reserved.</p>
+            
+        </div>
+        
+    </div><!-- /container -->
+    
+</div>
+<!-- ===== /wrap ====== -->
+    
+<div class="contact-form" id="contactLay01">
+    
+    <div class="inbx">
+        <h4>Email Send</h4>
+    </div-->
+	
+
+<!-- 메일 폼  -->
+    <form name=frm id=frm method="POST"
+    action="https://script.google.com/macros/s/AKfycbzLcnrleydp8I2wfBM3r73dnzeAxh-NntPaQ72HwaArcxZLPxE/exec">
+
+
+		<div class="form-bx">
+            <div class="inp-grp">
+                <input type="text" class="input" id="wr_name" name="성함" placeholder="성함">
+            </div>
+            <div class="inp-grp">
+                <input type="text" class="input" id="wr_subject" name="이메일" placeholder="이메일 주소를 기입해주세요.">
+                <!-- <input type="text" class="input" id="wr_2" name="wr_2" placeholder="연락처가 어떻게 되시나요?"> -->
+            </div>
+     
+            <div class="inp-grp">
+                <textarea class="textarea" id="wr_content" name="내용" placeholder="내용을 입력해주세요."></textarea>
+            </div>    
+        </div>
+        <div class="btz">
+            <div class="bt">
+                <button type="submit"><span>send</span></button>
+            </div>
+        </div> 
+
+
+</div>
+			
+    </form>
+
+
+	<script>
+		function fregister_submit1(f)
+		{
+			if (f.wr_name.value == "") {
+				alert("성함");
+				f.wr_name.focus();
+				return false;
+			}	
+
+			if (f.wr_subject.value == "") {
+				alert("이메일주소를 입력해주세요.");
+				f.wr_subject.focus();
+				return false;
+			}	
+			if (f.wr_2.value == "") {
+				alert("연락처를 입력해주세요.");
+				f.wr_2.focus();
+				return false;
+			}	
+	
+			if (f.wr_content.value == "") {
+				alert("내용을 입력해주세요.");
+				f.wr_content.focus();
+				return false;
+			}	
+			
+		}
+	</script>    
+    <a href="#none" class="btMn"><i></i><i></i><span>menu</span></a>
+    
+</div>
+
+        
+<div id="nav">    
+    <div class="inbx">
+        <nav class="gnb-nav">
+             <ul>
+                <li class="type-h2 menu-item focused-out"><a class="menu-word" href="index.html">Home</a>
+                    <div class="grayed">Home</div>
+                    <div class="numbering type-comp2">01</div>
+                </li>
+                <li class="type-h2 menu-item focused-out"><a class="menu-word" href="about.html">About</a>
+                    <div class="grayed">About</div>
+                    <div class="numbering type-comp2">02</div>
+                </li>
+                <li class="type-h2 menu-item focused-out"><a class="menu-word" href="work.html">Work</a>
+                    <div class="grayed">Work</div>
+                    <div class="numbering type-comp2">03</div>
+                </li>
+                <li class="type-h2 menu-item focused-out"><a class="menu-word" href="contact.html">Contact</a>
+                    <div class="grayed">Contact</div>
+                    <div class="numbering type-comp2">04</div>
+                </li>
+            </ul>
+        </nav>
+        <div class="fb">
+            <address>김미송</address>
+            <ul>
+                <li><span>Phone</span>   010 7254 7507</li>
+                <li><span>E-mail</span>   hnjm0402@naver.com</li>
+            </ul>
+        </div> 
+    
+</div><!-- /nav -->
+
+<script>
+	$('body').show();
+	NProgress.start();
+	$(window).load(function(){ 
+		NProgress.done(); 
+	}); 
+</script>
+
+
+
+</body>
+
+</html>
