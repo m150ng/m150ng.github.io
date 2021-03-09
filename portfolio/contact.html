@@ -21,9 +21,6 @@
 
 <script src="../song/js/common.js"></script>
 <script src="../song/js/wrest.js"></script>
-
-
-
     
 </head>
     
@@ -95,12 +92,13 @@
     
     <div class="inbx">
         <h4>Email Send</h4>
-    </div-->
+    </div-->    
 	
 
-<!-- 메일 폼  -->
-    <form name=frm id=frm method="POST"
-    action="https://script.google.com/macros/s/AKfycbzLcnrleydp8I2wfBM3r73dnzeAxh-NntPaQ72HwaArcxZLPxE/exec">
+    <!-- 메일 폼  -->
+    <form name=frm id=gform method="POST" data-email="lmkn0402@gmail.com"
+    action="https://script.google.com/macros/s/AKfycbyGFev-dL-IgxESJofHFl9hCNQhA_bM5ZxBl2WUfAhlDkR55ZQ/exec">
+    
 
 
 		<div class="form-bx">
@@ -111,7 +109,6 @@
                 <input type="text" class="input" id="wr_subject" name="이메일" placeholder="이메일 주소를 기입해주세요.">
                 <!-- <input type="text" class="input" id="wr_2" name="wr_2" placeholder="연락처가 어떻게 되시나요?"> -->
             </div>
-     
             <div class="inp-grp">
                 <textarea class="textarea" id="wr_content" name="내용" placeholder="내용을 입력해주세요."></textarea>
             </div>    
@@ -123,9 +120,12 @@
         </div> 
 
 
-</div>
-			
+        <!-- </div> -->
     </form>
+
+<div style="display:none;" id="thankyou_message">
+    <h2><em>감사합니다.</em> 메일이 성공적으로 전송되었습니다.</h2>
+</div>
 
 
 	<script>
@@ -160,6 +160,9 @@
     
 </div>
 
+<div style="display:none;" id="thankyou_message">
+    <h2><em>감사합니다.</em> 메일이 성공적으로 전송되었습니다.</h2>
+</div>
         
 <div id="nav">    
     <div class="inbx">
@@ -202,7 +205,11 @@
 </script>
 
 
+<script data-cfasync="false" type="text/javascript"
+src="./js/form-submission-handler.js">
+</script>
 
 </body>
+
 
 </html>
