@@ -350,7 +350,7 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 
 #container.about { background-color: #fff; }
 #container.about .visual { background-image: url("../images/about_hd.jpg"); }
-#container.about .visual .desc01 { position: absolute; bottom: 130px; left: 50%; max-width: 1540px; margin-left: -770px; }
+#container.about .visual .desc01 { position: absolute; bottom: 130px; left: 55%; max-width: 1540px; margin-left: -770px; }
 #container.about .visual .desc01 span { display: block; }
 
 .about001 { color: #333; max-width: 1540px; margin: 5rem auto 0; }
@@ -392,8 +392,8 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 .about003 .inbx .cli-bx::after { content: ''; clear: both; display: block; font-size: 0; }
 .about003 .inbx .cli-bx span { display: block; float: left; width: 116px; height: 116px; margin: 50px 0 50px 130px; color: #333; font-size: 14px;}
 
-.about004 { margin: 220px auto 0; padding: 0 0 10% 4%; width: 100%; }
-.about004 .inbx { position: relative; background-image: url(../images/memo.png); padding: 90px 0; }
+.about004 { margin: 220px auto 0; padding: 0 0 10% 0; width: 100%; }
+.about004 .inbx { position: relative; background-image: url(../images/memo.png); background-size: cover; padding: 90px 0; }
 .about004 .inbx .a04bx { width: 1280px; margin: 0 auto; padding: 0 0 0 200px; position: relative;  color: #555;}
 .about004 .inbx .sm-tit { position: absolute; white-space: nowrap; top: 5.5rem; left: 0; }
 .about004 .inbx .sm-tit span { font-size: 20px; display: inline-block; }
@@ -427,11 +427,6 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 
 .visual { height: 700px; background-size: cover; position: relative; }
 .visual .desc01 { color: #fff; font-size: 70px; display: inline-block; font-weight: 600; font-family: "lato"; }
-
-#container.about { background-color: #fff; }
-#container.about .visual { background-image: url("../images/about_hd.jpg"); }
-#container.about .visual .desc01 { position: absolute; bottom: 130px; left: 50%; max-width: 1540px; margin-left: -770px; }
-#container.about .visual .desc01 span { display: block; }
 
 /* -------WORK----------- */
 
@@ -581,7 +576,7 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 .nice-select { width: 48%; float: left; margin-left: 2%; border: none; color: #666; line-height: 48px; height: 48px; border: none; border-bottom: #222 3px solid; border-radius: 0; padding: 0 40px 0 10px; clear: none; }
 .nice-select.open .list { width: 100%; }
 
-.filebox { position: relative; padding: 0; width: 48%; float: left; margin-left: 2%; display: inline-block; vertical-align: middle; font-size: 14px; }
+.filebox { position: relative; padding: 0; width: 48%; float:left; margin-left: 2%; display: inline-block; vertical-align: middle; font-size: 14px; }
 .filebox input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; font-size: 14px; }
 .filebox label { position: absolute; top: 0; right: 0; width: 100%; height: 48px; line-height: 48px; margin: 0; display: block; background-color: transparent; cursor: pointer; text-indent: -9999px; text-align: left; }
 .filebox label:hover { color: #f2b644; }
@@ -921,5 +916,5 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
   .work-list .item .desc { left: -20px; font-size: 13px; bottom: 30px; }
   .work-list .item .desc strong { font-size: 25px; }
   .work-vew .top { right: 30px; display: none; } }
-  sass layout.scss:layout.css --style compact --sourcemap=none
+  /* sass layout.scss:layout.css --style compact --sourcemap=none */
 
