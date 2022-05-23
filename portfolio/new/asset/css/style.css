@@ -453,8 +453,8 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
   top: 50%;
   transform: translate(-50%, -50%);
   
-  border:5px solid white;
-  overflow: auto;
+  /* border:5px solid white; */
+  overflow: overlay;
   z-index: 11;
 }
 /* .work-list .item .modal_content a{
