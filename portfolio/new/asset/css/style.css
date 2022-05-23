@@ -356,7 +356,7 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 .about001 { color: #333; max-width: 1540px; margin: 5rem auto 0; }
 .about001 .sm-tit { margin-bottom: 30px; }
 .about001 .desc01::after { content: ''; clear: both; display: block; font-size: 0; }
-.about001 .txt-l { width: 50%; float: left; color: #222; font-size: 70px; font-weight: 900; font-family: "lato"; }
+.about001 .txt-l { width: 45%; margin-left: 5%; float: left; color: #222; font-size: 70px; font-weight: 900; font-family: "lato"; }
 .about001 .txt-l span { display: block; line-height: 1; }
 .about001 .txt-r { width: 50%; float: right; position: relative; padding-top: 35px; }
 .about001 .txt-r::before { content: ''; width: 60px; height: 3px; background: #000; display: block; position: absolute; top: 0; left: 0; }
