@@ -86,15 +86,17 @@ legend { visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0; 
 html { scrollbar-3dLight-Color: #efefef; scrollbar-arrow-color: #dfdfdf; scrollbar-base-color: #efefef; scrollbar-Face-Color: #dfdfdf; scrollbar-Track-Color: #efefef; scrollbar-DarkShadow-Color: #efefef; scrollbar-Highlight-Color: #efefef; scrollbar-Shadow-Color: #efefef; }
 
 /* Chrome, Safari */
-::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar { width: 8.5px; }
 
 ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment { display: block; height: 10px; background: #fff; }
 
 ::-webkit-scrollbar-track { background: #fff; border-radius: 0; }
 
-::-webkit-scrollbar-thumb { height: 50px; width: 50px; background: #888; border-radius: 0; }
+::-webkit-scrollbar-thumb { height: 30%; width: 50px; background: #000; border-radius: 10px; }
 
-::-webkit-scrollbar-thumb:window-inactive { background: #888; border-radius: 0; }
+::-webkit-scrollbar-thumb:window-inactive { background: #000; border-radius: 0; }
+
+
 
 /* -------------------------------------------- form
 /* ------------------------------------------ */

@@ -561,6 +561,15 @@
         modals[num].style.display = "block";
         console.log(num);
         };
+
+        // 모달팝업을 열 때 : 
+        $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+        $('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지
+            event.preventDefault();
+            event.stopPropagation();
+
+            return false;
+        });
  
         /* // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다. */
         spanes[num].onclick = function() {
@@ -568,6 +577,7 @@
             };
         };
         }
+
  
         /* // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다. */
         for(var i = 0; i < btns.length; i++) {
@@ -586,9 +596,19 @@
         }
         };
 
+        // 모달팝업을 닫을 때  :
+
+        $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제
+        $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
+
+
 </script>
 
+<script>
 
+
+
+</script>
 
 </body>
 
