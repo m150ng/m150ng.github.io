@@ -489,7 +489,7 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 
 #container.work.vew { padding-top: 0; }
 
-.work-list { max-width: 1480px; margin: 0 auto; }
+.work-list { max-width: 1350px; margin: 0 auto; }
 .work-list .inbx { margin-left: -7%; }
 .work-list .inbx::after { content: ''; clear: both; display: block; font-size: 0; }
 .work-list .item { width: 43%; margin: 0 0 300px 7%; position: relative; }
