@@ -85,7 +85,7 @@ p{
     bottom: 12%;
     opacity: 0;
     cursor:pointer;
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.2em;
 }
 .retry img{
@@ -119,10 +119,10 @@ p{
 @keyframes fadeout {
     /* 효과를 동작시간 동안 0 ~ 1까지 */
         from {
-            opacity: 1;
+            visibility: visible;
         }
         to {
-            opacity: 0;
+            visibility: hidden;
         }
     }
 
