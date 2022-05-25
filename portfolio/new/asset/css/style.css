@@ -578,12 +578,6 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 .nice-select { width: 48%; float: left; margin-left: 2%; border: none; color: #666; line-height: 48px; height: 48px; border: none; border-bottom: #222 3px solid; border-radius: 0; padding: 0 40px 0 10px; clear: none; }
 .nice-select.open .list { width: 100%; }
 
-.filebox { position: relative; padding: 0; width: 48%; float:left; margin-left: 2%; display: inline-block; vertical-align: middle; font-size: 14px; }
-.filebox input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; font-size: 14px; }
-.filebox label { position: absolute; top: 0; right: 0; width: 100%; height: 48px; line-height: 48px; margin: 0; display: block; background-color: transparent; cursor: pointer; text-indent: -9999px; text-align: left; }
-.filebox label:hover { color: #f2b644; }
-.filebox .upload-name { height: 48px; line-height: 48px; padding: 0 10px; width: 100%; margin: 0; vertical-align: middle; border-radius: 0; border: none; border-bottom: #222 3px solid; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; ime-mode: inactive; outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; font-size: 14px; background: #fff url("../images/ic_upload.png") 98% 50% no-repeat; }
-
 .work-pop { width: 100%; display: none; height: 100vh; }
 .work-pop .inbx { width: 100%; height: 100vh; position: relative; }
 .work-pop .inbx img { display: block; width: 100%; }

@@ -139,7 +139,7 @@ p{
   }
   100%{
       transform: scale(2);
-      transform: translate(20%,-5%);
+      transform: translate(40%,-5%);
       opacity: 1;
   }
 }
