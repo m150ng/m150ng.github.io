@@ -92,6 +92,9 @@ p{
     padding: 0 10px;
     width: 19px;
 }
+#retry{
+    z-index: 5500;
+}
 
 .ball{
     z-index: -99;
