@@ -459,6 +459,34 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
   overflow: overlay;
   z-index: 11;
 }
+
+.work1 .work-list .item .modal_content {width: 66%;}
+
+.work6 .work-list .item .modal_content {
+  width: 66%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: overlay;
+  z-index: 11;
+}
+
+.work6 .work-list .item .modal_content .MDimg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  z-index: 11;
+}
+
+
+
+
 /* .work-list .item .modal_content a{
   display: block;
   width: 100%;
@@ -473,7 +501,10 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
     vertical-align: top;
     border: 0;
 }
-.thumb_close{
+/* .thumb_close{
+  background-color: #f7f7f7;
+} */
+.work1 .thumb_close{
   background-color: #f7f7f7;
 }
 /* .thumb_close a{
@@ -484,10 +515,12 @@ body.ovf_hdn #header.cBlack .btMn i { background-color: #fff; }
 /* ----------------모달 끝 */
 
 #container.work { background-color: #fff; padding: 280px 0 0 0; }
-#container.work .tit-area { max-width: 1480px; margin: 0 auto 100px; }
+#container.work .tit-area { max-width: 1480px; margin: 0 auto 2em; }
 #container.work .tit-area .desc01 { font-size: 60px; color: #222; }
-#container.work .tit-area .desc01 span { display: block; line-height: 1; font-family: "lato"; font-weight: 600; }
+#container.work .tit-area .desc01 span { display: block; line-height: 1; font-family: "lato"; font-weight: 600; padding-bottom: 0.2em;}
 #container.work .tit-area .desc01 span a {font-size: 45px; color: #222; }
+#container.work .tit-area .desc01 span:first-child {padding-top: 0.4em;}
+#container.work .tit-area .desc01 span:last-child {padding-bottom: none;}
 
 #container.work.vew { padding-top: 0; }
 
